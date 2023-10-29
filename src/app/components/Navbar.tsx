@@ -6,7 +6,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 
-const navLinks = [
+export type Link = {
+  title: string
+  path: string
+}
+
+const navLinks: Link[] = [
   {
     title: "About",
     path: "#about",
@@ -31,7 +36,7 @@ const Navbar = () => {
           href="/"
           className=" border rounded-full p-1 border-secondary-200"
         >
-          <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
+          <Image src="/images/logo.png" alt="Logo" width={50} height={50} priority />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

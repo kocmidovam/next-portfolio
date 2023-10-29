@@ -4,7 +4,17 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData: any = [
+type Project = {
+  id: number
+  title: string
+  description: string
+  image: string
+  tag: string[]
+  gitUrl: string
+  previewUrl: string
+}
+
+const projectsData: Project[] = [
   {
     id: 1,
     title: "Sofian Eshop",
@@ -86,11 +96,11 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag: any) => {
+  const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
-  const filteredProjects = projectsData.filter((project: any) =>
+  const filteredProjects = projectsData?.filter((project: Project) =>
     project.tag.includes(tag),
   );
 
@@ -101,10 +111,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-[#dbe2f8]  mt-4 md:mt-12 mb-4">
+      <h2 className="text-center text-4xl font-bold text-[#dbe2f8]  mt-4 md:mt-12 mb-10">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-4 md:mb-8">
+      <div className="text-white flex flex-row justify-center items-center gap-2 mb-6 md:mb-10">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -122,7 +132,7 @@ const ProjectsSection = () => {
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project: any, index: any) => (
+        {filteredProjects.map((project: Project, index: number) => (
           <motion.li
             key={index}
             variants={cardVariants}

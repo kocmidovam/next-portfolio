@@ -8,8 +8,8 @@ const variants = {
 
 type Props = {
   active: boolean;
-  selectTab: any;
-  children: any;
+  selectTab: () => void;
+  children: string[];
 };
 
 const TabButton = ({ active, selectTab, children }: Props) => {

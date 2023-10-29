@@ -1,9 +1,15 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, {useTransition, useState, ReactElement} from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
-const TAB_DATA: any = [
+type Tab = {
+  title: string
+  id: string
+  content: ReactElement
+}
+
+const TAB_DATA: Tab[] = [
   {
     title: "Skills",
     id: "skills",
@@ -53,16 +59,16 @@ const About = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 py-8 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 pb-8 pt-8 md:pt-24 xl:gap-16 sm:pb-16 xl:px-16">
         <Image
           src="/images/about-img.png"
           width={500}
           height={500}
           alt=""
-          className="hidden md:block md:mt-16 rounded-lg"
+          className="hidden md:block md:mt-24 rounded-lg"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-[#dbe2f8] mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-[#dbe2f8] mb-10">About Me</h2>
           <p className="text-[#dbe2f8] lg:text-lg">
             I am Marta, a Frontend Developer with a passion for creating
             intuitive and dynamic user experiences. I have an understanding of
@@ -100,7 +106,7 @@ const About = () => {
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t: any) => t.id === tab).content}
+            {TAB_DATA?.find((t: Tab) => t.id === tab)?.content}
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {
   name: string;
-  onClick: any;
+  onClick: (name:string) => void;
   isSelected: boolean;
 };
 const ProjectTag = ({ name, onClick, isSelected }: Props) => {

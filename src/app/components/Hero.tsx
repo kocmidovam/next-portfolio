@@ -6,8 +6,19 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Hero = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+
+    elem?.scrollIntoView({
+      behavior: "smooth"
+    })
+  };
+
   return (
-    <section className="mb-7 lg:my-24">
+    <section className="mb-7 lg:mt-24 lg:mb-40">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -30,6 +41,7 @@ const Hero = () => {
           <div className="px-10 sm:px-0">
             <Link
               href="#about"
+              onClick={handleScroll}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-700 to-secondary-400 hover:bg-gradient-to-r text-white"
             >
               Know more
@@ -59,6 +71,7 @@ const Hero = () => {
               className=" transform -translate-y-[42px]  lg:-translate-y-[60px] "
               width={350}
               height={350}
+              priority
             />
           </div>
         </motion.div>
