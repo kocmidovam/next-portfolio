@@ -49,7 +49,7 @@ const ProjectCard = ({
       </div>
       <div className="text-[#dbe2f8] rounded-b-xl mt-3 py-3">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        <p className="text-[#ADB7BE] md:text-lg">{description}</p>
       </div>
     </div>
   );

@@ -1,10 +1,7 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
 import GoogleAnalytics from "./components/Analytics";
 import React from "react";
 import { Metadata } from 'next'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Marta Kočmídová | Frontend Developer',
@@ -22,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <GoogleAnalytics GA_MEASUREMENT_ID="G-ZPWQKZWGET" />
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }

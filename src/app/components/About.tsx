@@ -14,7 +14,7 @@ const TAB_DATA: Tab[] = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2 text-[#ccd6f6] mx-[0.5rem]">
+      <ul className="list-disc pl-2 text-[#ccd6f6] mx-[0.5rem] lg:text-lg">
         <li>React</li>
         <li>Redux</li>
         <li>NextJs</li>
@@ -29,7 +29,7 @@ const TAB_DATA: Tab[] = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2 text-[#ccd6f6] mx-[0.5rem]">
+      <ul className="list-disc pl-2 text-[#ccd6f6] mx-[0.5rem] lg:text-lg">
         <li>Frontend Developer Hatchery, Unicorn</li>
         <li>The Complete Web Developer, Udemy</li>
         <li>Secondary industrial school of clothing</li>
@@ -40,7 +40,7 @@ const TAB_DATA: Tab[] = [
     title: "Certificates",
     id: "certificates",
     content: (
-      <ul className="list-disc pl-2 text-[#ccd6f6] mx-[0.5rem]">
+      <ul className="list-disc pl-2 text-[#ccd6f6] mx-[0.5rem] lg:text-lg">
         <li>First Certificate in English, University of Cambridge</li>
       </ul>
     ),
@@ -59,14 +59,15 @@ const About = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 pb-8 pt-8 md:pt-24 xl:gap-16 sm:pb-16 xl:px-16">
-        <Image
-          src="/images/about-img.png"
-          width={500}
-          height={500}
-          alt=""
-          className="hidden md:block md:mt-24 rounded-lg"
-        />
+      <div className="md:grid md:grid-cols-2 gap-14 pb-8 pt-8 md:pt-24 xl:gap-16 sm:pb-16 xl:px-16">
+          <Image
+              src="/images/about-img.png"
+              width={500}
+              height={500}
+              alt=""
+              className="transition duration-500 shadow-[10px_10px_22px_0_rgba(45,212,191,0.96)] hover:shadow-[12px_12px_5px_2px_rgba(45,212,191,0.96)] hidden md:block md:mt-24 rounded-lg "
+          />
+
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-[#dbe2f8] mb-10">About Me</h2>
           <p className="text-[#dbe2f8] lg:text-lg">
@@ -82,7 +83,7 @@ const About = () => {
             websites. I am always eager to learn new technologies and improve my
             skills.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 lg:text-lg">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
