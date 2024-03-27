@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col bg-[#0a192f]">
         <Navbar />
-        <div className="container mt-24 md:mt-32 mx-auto px-4 md:px-8 lg:px-16">
+        <div className="container mt-32 mx-auto px-4 md:px-8 lg:px-16">
           <Hero />
           <About />
           <Projects />
