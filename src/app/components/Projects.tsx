@@ -1,8 +1,8 @@
-"use client";
-import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+"use client"
+import React, { useState, useRef } from "react"
+import ProjectCard from "./ProjectCard"
+import ProjectTag from "./ProjectTag"
+import { motion, useInView } from "framer-motion"
 
 type Project = {
   id: number
@@ -16,14 +16,24 @@ type Project = {
 
 const projectsData: Project[] = [
   {
+    id: 0,
+    title: "Prospector",
+    description:
+      "Sales intelligence platform built with Next.js and TypeScript, helping businesses identify ideal customers across 11M companies in Central Europe. Developed advanced market segmentation, detailed company profiles, and real-time business signals for opportunity tracking.",
+    image: "/images/projects/Prospector.png",
+    tag: ["All", "Work"],
+    gitUrl: "",
+    previewUrl: "https://www.bizmachine.com/en/prospector",
+  },
+  {
     id: 1,
     title: "Sofian Eshop",
     description:
-      "One of several projects as part of Sherwood Digital (and only public project)",
+      "One of several projects as part of Sherwood Digital (and only public project, but now also no longer available). ",
     image: "/images/projects/sofian.png",
     tag: ["All", "Work"],
     gitUrl: "",
-    previewUrl: "https://eshop.sofian.cz/",
+    previewUrl: "",
   },
   {
     id: 2,
@@ -89,57 +99,42 @@ const projectsData: Project[] = [
     gitUrl: "https://github.com/kocmidovam/RGBgame",
     previewUrl: "https://kocmidovam.github.io/RGBgame/",
   },
-];
+]
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const [tag, setTag] = useState("All")
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   const handleTagChange = (newTag: string) => {
-    setTag(newTag);
-  };
+    setTag(newTag)
+  }
 
-  const filteredProjects = projectsData?.filter((project: Project) =>
-    project.tag.includes(tag),
-  );
+  const filteredProjects = projectsData?.filter((project: Project) => project.tag.includes(tag))
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-  };
+  }
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-[#dbe2f8]  mt-4 md:mt-12 mb-10">
+    <section id='projects'>
+      <h2 className='text-center text-4xl font-bold text-[#dbe2f8]  mt-4 md:mt-12 mb-10'>
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 mb-6 md:mb-10">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Work"
-          isSelected={tag === "Work"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Personal"
-          isSelected={tag === "Personal"}
-        />
+      <div className='text-white flex flex-row justify-center items-center gap-2 mb-6 md:mb-10'>
+        <ProjectTag onClick={handleTagChange} name='All' isSelected={tag === "All"} />
+        <ProjectTag onClick={handleTagChange} name='Work' isSelected={tag === "Work"} />
+        <ProjectTag onClick={handleTagChange} name='Personal' isSelected={tag === "Personal"} />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
         {filteredProjects.map((project: Project, index: number) => (
           <motion.li
             key={index}
             variants={cardVariants}
-            initial="initial"
+            initial='initial'
             animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
+            transition={{ duration: 0.3, delay: index * 0.4 }}>
             <ProjectCard
               key={project.id}
               title={project.title}
@@ -152,7 +147,7 @@ const ProjectsSection = () => {
         ))}
       </ul>
     </section>
-  );
-};
+  )
+}
 
-export default ProjectsSection;
+export default ProjectsSection

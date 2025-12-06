@@ -64,10 +64,11 @@ const Hero = () => {
             <Image
               src='/images/profile-photo.jpg'
               alt='hero image'
-              className=' transform -translate-y-[42px]  lg:-translate-y-[60px] '
-              width={350}
-              height={350}
+              fill
+              className='object-cover object-[center_20%]'
+              sizes='(max-width: 1024px) 240px, 350px'
               priority
+              quality={90}
             />
           </div>
         </motion.div>
