@@ -16,7 +16,17 @@ type Project = {
 
 const projectsData: Project[] = [
   {
-    id: 0,
+    id: 8,
+    title: "Notes App",
+    description:
+      "IN PROGRESS - A React + TypeScript notes application supporting text, lists, and headings, with future database integration for persistent storage.",
+    image: "/images/projects/notes-app.png",
+    tag: ["All", "Personal"],
+    gitUrl: "https://github.com/kocmidovam/notes-app",
+    previewUrl: "https://kocmidovam.github.io/notes-app/",
+  },
+  {
+    id: 7,
     title: "Prospector",
     description:
       "Sales intelligence platform built with Next.js and TypeScript, helping businesses identify ideal customers across 11M companies in Central Europe. Developed advanced market segmentation, detailed company profiles, and real-time business signals for opportunity tracking.",
@@ -26,7 +36,7 @@ const projectsData: Project[] = [
     previewUrl: "https://www.bizmachine.com/en/prospector",
   },
   {
-    id: 1,
+    id: 6,
     title: "Sofian Eshop",
     description:
       "One of several projects as part of Sherwood Digital (and only public project, but now also no longer available). ",
@@ -36,7 +46,7 @@ const projectsData: Project[] = [
     previewUrl: "",
   },
   {
-    id: 2,
+    id: 5,
     title: "Socialbakers Website",
     description:
       "The website of the Socialbakers company with CMS. We were transforming existing Socialbakers " +
@@ -47,7 +57,7 @@ const projectsData: Project[] = [
     previewUrl: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Socialbakers Careers",
     description:
       "Careers website for Socialbakers. Standalone website with list of all open positions. " +
@@ -58,7 +68,7 @@ const projectsData: Project[] = [
     previewUrl: "",
   },
   {
-    id: 4,
+    id: 3,
     title: "Robotfriends",
     description:
       "This application generates a list of users from an API. The features include filtering users, " +
@@ -69,7 +79,7 @@ const projectsData: Project[] = [
     previewUrl: "https://kocmidovam.github.io/Robofriends/",
   },
   {
-    id: 5,
+    id: 2,
     title: "Trillo",
     description:
       "Static HTML page with layout done with flexbox - no functionality. In this project I " +
@@ -80,7 +90,7 @@ const projectsData: Project[] = [
     previewUrl: "https://kocmidovam.github.io/Trillo/",
   },
   {
-    id: 6,
+    id: 1,
     title: "Simple ToDo list",
     description:
       "jQuery based ToDo app that allows user to add, remove and check/uncheck tasks spiced with little CSS animations and effects.",
@@ -90,7 +100,7 @@ const projectsData: Project[] = [
     previewUrl: "https://kocmidovam.github.io/Todo-list/",
   },
   {
-    id: 7,
+    id: 0,
     title: "RGB Game",
     description:
       "Nice little app for training RGB skills. Build with HTML, bit of CSS and JavaScript. I practiced DOM manipulation and event handling.",
