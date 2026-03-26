@@ -1,0 +1,94 @@
+{
+  "name": "Marta Kocmidova",
+  "navBar": {
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "heroBanner": {
+    "greeting": "Hello, I'm",
+    "name": "Marta Kocmidova",
+    "jobTitle": "Frontend Developer",
+    "knowMore": "Know more",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About me",
+    "description1": "I'm Marta, a Medior Frontend Developer building web applications with React, Next.js, and TypeScript. I create responsive, interactive interfaces and enjoy working on projects where I can contribute meaningfully while continuing to learn and grow.",
+    "description2": "I have hands-on experience with modern frontend workflows, from component design to API integration, and I'm always looking for opportunities to refine my craft.",
+    "skills": {
+      "title": "Skills",
+      "items": [
+        "React",
+        "NextJs",
+        "TypeScript",
+        "Redux",
+        "JavaScript",
+        "REST API",
+        "GraphQL",
+        "Tailwind"
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        "Experience from work",
+        "Frontend Developer Hatchery, Unicorn",
+        "The Complete Web Developer, Udemy",
+        "Secondary industrial school of clothing"
+      ]
+    },
+    "certificates": {
+      "title": "Certificates",
+      "items": ["First Certificate in English, University of Cambridge"]
+    }
+  },
+
+  "email": {
+    "title": "Let's Connect",
+    "message": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "button": "Send message"
+  },
+  "projects": {
+    "title": "My Projects",
+    "all": "All",
+    "work": "Work",
+    "personal": "Personal",
+    "8": {
+      "title": "Notes App",
+      "description": "A React + TypeScript notes application with magic link authentication and Supabase database. Features a block-based editor supporting text, headings, lists, images, and nested pages with drag-and-drop reordering."
+    },
+    "7": {
+      "title": "Prospector",
+      "description": "Business intelligence platform built with Next.js and TypeScript, helping businesses find ideal customers across 11M companies in Central Europe. Features advanced market segmentation, detailed company profiles, and real-time opportunity tracking."
+    },
+    "6": {
+      "title": "Sofian Eshop",
+      "description": "One of several projects as part of Sherwood Digital (and only public project, but now also no longer available)."
+    },
+    "5": {
+      "title": "Socialbakers Website",
+      "description": "The website of the Socialbakers company with CMS. We were transforming existing Socialbakers website from PHP to Next.js. Not available anymore."
+    },
+    "4": {
+      "title": "Socialbakers Careers",
+      "description": "Careers website for Socialbakers. Standalone website with list of all open positions. Can be filtered by Location or Department, connected to Greenhouse. Not available anymore."
+    },
+    "3": {
+      "title": "Robotfriends",
+      "description": "This application generates a list of users from an API. The features include filtering users, search box, scroll bar, loading time and error boundary message."
+    },
+    "2": {
+      "title": "Trillo",
+      "description": "Static HTML page with layout done with flexbox - no functionality. In this project I learned not just flexbox but also working with Sass preprocessor, custom CSS properties, media queries, masks and SVG."
+    },
+    "1": {
+      "title": "Simple ToDo list",
+      "description": "jQuery based ToDo app that allows user to add, remove and check/uncheck tasks spiced with little CSS animations and effects."
+    },
+    "0": {
+      "title": "RGB Game",
+      "description": "Nice little app for training RGB skills. Build with HTML, bit of CSS and JavaScript. I practiced DOM manipulation and event handling."
+    }
+  }
+}

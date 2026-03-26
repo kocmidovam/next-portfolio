@@ -4,8 +4,11 @@ import Image from "next/image"
 import { TypeAnimation } from "react-type-animation"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 const Hero = () => {
+  const t = useTranslations("heroBanner")
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
     const href = e.currentTarget.href
@@ -27,11 +30,11 @@ const Hero = () => {
           className='col-span-7 place-self-center self-start text-center sm:text-left justify-self-center sm:justify-self-start mb-5'>
           <h1 className='text-[#ccd6f6] mb-7 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold'>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary-700 to-secondary-300'>
-              Hello, I&apos;m{" "}
+              {t("greeting")}
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Marta", 2000, "Frontend Developer", 2000]}
+              sequence={[t("name"), 2000, t("jobTitle"), 2000]}
               wrapper='span'
               speed={30}
               repeat={Infinity}
@@ -42,7 +45,7 @@ const Hero = () => {
               href='#about'
               onClick={handleScroll}
               className='font-normal px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-700 to-secondary-400 hover:bg-gradient-to-r text-white'>
-              Know more
+              {t("knowMore")}
             </Link>
             <Link
               href='/CV_Marta_Kočmídová.pdf'
@@ -50,7 +53,7 @@ const Hero = () => {
               target='_blank'
               className='font-normal px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-600 to-secondary-400 hover:bg-slate-800 text-white mt-3'>
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
-                Download CV
+                {t("downloadCV")}
               </span>
             </Link>
           </div>

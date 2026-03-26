@@ -1,22 +1,26 @@
-import "./globals.css"
-import GoogleAnalytics from "./components/Analytics"
+import "../globals.css"
+import GoogleAnalytics from "../components/Analytics"
 import React from "react"
 import { Metadata } from "next"
+import { NextIntlClientProvider } from "next-intl"
+import { getLocale, getMessages } from "next-intl/server"
 
 export const metadata: Metadata = {
   title: "Marta Kočmídová | Medior Frontend Developer",
   description:
     "Medior Frontend Developer building web applications with React, Next.js, and TypeScript.",
-  icons: {
-    icon: "./favicon.ico",
-  },
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+
   return (
-    <html lang='en'>
+    <html lang={locale}>
       <GoogleAnalytics GA_MEASUREMENT_ID='G-ZPWQKZWGET' />
-      <body>{children}</body>
+      <body>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+      </body>
     </html>
   )
 }

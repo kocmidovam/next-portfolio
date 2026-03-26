@@ -1,20 +1,20 @@
-import React from "react";
-import NavLink from "./Navlink";
-import {Link} from "@/app/components/Navbar";
+import React from "react"
+import NavLink from "./Navlink"
+import { Link } from "@/components/Navbar"
 
 type Props = {
-  links: Link[];
-};
+  links: Link[]
+}
 const MenuOverlay = ({ links }: Props) => {
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className='flex flex-col py-4 items-center'>
       {links.map((link: Link, index: number) => (
         <li key={index}>
           <NavLink href={link.path} title={link.title} />
         </li>
       ))}
     </ul>
-  );
-};
+  )
+}
 
-export default MenuOverlay;
+export default MenuOverlay

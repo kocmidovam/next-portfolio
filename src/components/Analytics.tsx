@@ -3,7 +3,7 @@
 import Script from "next/script"
 import { usePathname, useSearchParams } from "next/navigation"
 import { Suspense, useEffect } from "react"
-import { pageview } from "@/app/gtagHelper"
+import { pageview } from "@/gtagHelper"
 
 function GoogleAnalyticsContent({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }) {
   const pathname = usePathname()

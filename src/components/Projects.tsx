@@ -1,13 +1,14 @@
 "use client"
-import React, { useState, useRef } from "react"
+import { useState, useRef } from "react"
 import ProjectCard from "./ProjectCard"
 import ProjectTag from "./ProjectTag"
 import { motion, useInView } from "framer-motion"
+import { useTranslations } from "next-intl"
 
 type Project = {
   id: number
-  title: string
-  description: string
+  titleKey: string
+  descriptionKey: string
   image: string
   tag: string[]
   gitUrl: string
@@ -17,19 +18,17 @@ type Project = {
 const projectsData: Project[] = [
   {
     id: 8,
-    title: "Notes App",
-    description:
-      "IN PROGRESS - A React + TypeScript notes application supporting text, lists, and headings, with future database integration for persistent storage.",
+    titleKey: "projects.8.title",
+    descriptionKey: "projects.8.description",
     image: "/images/projects/notes-app.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/kocmidovam/notes-app",
-    previewUrl: "https://kocmidovam.github.io/notes-app/",
+    previewUrl: "https://mellifluous-sawine-27161a.netlify.app/",
   },
   {
     id: 7,
-    title: "Prospector",
-    description:
-      "Sales intelligence platform built with Next.js and TypeScript, helping businesses identify ideal customers across 11M companies in Central Europe. Developed advanced market segmentation, detailed company profiles, and real-time business signals for opportunity tracking.",
+    titleKey: "projects.7.title",
+    descriptionKey: "projects.7.description",
     image: "/images/projects/Prospector.png",
     tag: ["All", "Work"],
     gitUrl: "",
@@ -37,9 +36,8 @@ const projectsData: Project[] = [
   },
   {
     id: 6,
-    title: "Sofian Eshop",
-    description:
-      "One of several projects as part of Sherwood Digital (and only public project, but now also no longer available). ",
+    titleKey: "projects.6.title",
+    descriptionKey: "projects.6.description",
     image: "/images/projects/sofian.png",
     tag: ["All", "Work"],
     gitUrl: "",
@@ -47,10 +45,8 @@ const projectsData: Project[] = [
   },
   {
     id: 5,
-    title: "Socialbakers Website",
-    description:
-      "The website of the Socialbakers company with CMS. We were transforming existing Socialbakers " +
-      "website from PHP to Next.js. Not available anymore.",
+    titleKey: "projects.5.title",
+    descriptionKey: "projects.5.description",
     image: "/images/projects/socialbakers-main.png",
     tag: ["All", "Work"],
     gitUrl: "",
@@ -58,10 +54,8 @@ const projectsData: Project[] = [
   },
   {
     id: 4,
-    title: "Socialbakers Careers",
-    description:
-      "Careers website for Socialbakers. Standalone website with list of all open positions. " +
-      "Can be filtered by Location or Department, connected to Greenhouse. Not available anymore.",
+    titleKey: "projects.4.title",
+    descriptionKey: "projects.4.description",
     image: "/images/projects/socialbakers-careers.png",
     tag: ["All", "Work"],
     gitUrl: "",
@@ -69,10 +63,8 @@ const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: "Robotfriends",
-    description:
-      "This application generates a list of users from an API. The features include filtering users, " +
-      "search box, scroll bar, loading time and error boundary message.",
+    titleKey: "projects.3.title",
+    descriptionKey: "projects.3.description",
     image: "/images/projects/robotfriends.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/kocmidovam/Robofriends",
@@ -80,10 +72,8 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "Trillo",
-    description:
-      "Static HTML page with layout done with flexbox - no functionality. In this project I " +
-      "learned not just flexbox but also working with Sass preprocessor, custom CSS properties, media queries, masks and SVG.",
+    titleKey: "projects.2.title",
+    descriptionKey: "projects.2.description",
     image: "/images/projects/trillo.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/kocmidovam/Trillo",
@@ -91,9 +81,8 @@ const projectsData: Project[] = [
   },
   {
     id: 1,
-    title: "Simple ToDo list",
-    description:
-      "jQuery based ToDo app that allows user to add, remove and check/uncheck tasks spiced with little CSS animations and effects.",
+    titleKey: "projects.1.title",
+    descriptionKey: "projects.1.description",
     image: "/images/projects/todo.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/kocmidovam/Todo-list",
@@ -101,9 +90,8 @@ const projectsData: Project[] = [
   },
   {
     id: 0,
-    title: "RGB Game",
-    description:
-      "Nice little app for training RGB skills. Build with HTML, bit of CSS and JavaScript. I practiced DOM manipulation and event handling.",
+    titleKey: "projects.0.title",
+    descriptionKey: "projects.0.description",
     image: "/images/projects/rgb.png",
     tag: ["All", "Personal"],
     gitUrl: "https://github.com/kocmidovam/RGBgame",
@@ -112,6 +100,7 @@ const projectsData: Project[] = [
 ]
 
 const ProjectsSection = () => {
+  const t = useTranslations()
   const [tag, setTag] = useState("All")
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -130,12 +119,12 @@ const ProjectsSection = () => {
   return (
     <section id='projects'>
       <h2 className='text-center text-4xl font-bold text-[#dbe2f8]  mt-4 md:mt-12 mb-10'>
-        My Projects
+        {t("projects.title")}
       </h2>
       <div className='text-white flex flex-row justify-center items-center gap-2 mb-6 md:mb-10'>
-        <ProjectTag onClick={handleTagChange} name='All' isSelected={tag === "All"} />
-        <ProjectTag onClick={handleTagChange} name='Work' isSelected={tag === "Work"} />
-        <ProjectTag onClick={handleTagChange} name='Personal' isSelected={tag === "Personal"} />
+        <ProjectTag onClick={handleTagChange} name={t("projects.all")} value='All' isSelected={tag === "All"} />
+        <ProjectTag onClick={handleTagChange} name={t("projects.work")} value='Work' isSelected={tag === "Work"} />
+        <ProjectTag onClick={handleTagChange} name={t("projects.personal")} value='Personal' isSelected={tag === "Personal"} />
       </div>
       <ul ref={ref} className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
         {filteredProjects.map((project: Project, index: number) => (
@@ -147,8 +136,8 @@ const ProjectsSection = () => {
             transition={{ duration: 0.3, delay: index * 0.4 }}>
             <ProjectCard
               key={project.id}
-              title={project.title}
-              description={project.description}
+              title={t(project.titleKey)}
+              description={t(project.descriptionKey)}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}

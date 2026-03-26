@@ -1,0 +1,98 @@
+{
+  "name": "Marta Kočmídová",
+  "navBar": {
+    "about": "O mně",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "heroBanner": {
+    "greeting": "Ahoj, jsem",
+    "name": "Marta Kočmídová",
+    "jobTitle": "Frontend Developer",
+    "knowMore": "Více informací",
+    "downloadCV": "Stáhnout CV"
+  },
+  "about": {
+    "title": "O mně",
+    "description1": "Jsem Marta, Medior Frontend Developer vyvíjející webové aplikace s React, Next.js a TypeScript. Vytvářím responzivní a interaktivní rozhraní a ráda pracuji na projektech, kde mohu smysluplně přispívat a zároveň se učit a růst.",
+    "description2": "Mám praktické zkušenosti s moderními frontend workflows, od návrhu komponent po integraci API, a stále hledám příležitosti, jak zdokonalit své dovednosti.",
+    "skills": {
+      "title": "Dovednosti",
+      "items": [
+        "React",
+        "NextJs",
+        "TypeScript",
+        "Redux",
+        "JavaScript",
+        "REST API",
+        "GraphQL",
+        "Tailwind"
+      ]
+    },
+    "education": {
+      "title": "Vzdělání",
+      "items": [
+        "Zkušenosti z praxe",
+        "Frontend Developer Hatchery, Unicorn",
+        "The Complete Web Developer, Udemy",
+        "Střední průmyslová škola oděvní"
+      ]
+    },
+    "certificates": {
+      "title": "Certifikáty",
+      "items": ["First Certificate in English, Univerzita v Cambridge"]
+    }
+  },
+  "email": {
+    "title": "Spojme se",
+    "message": "Momentálně hledám nové příležitosti a moje schránka je vždy otevřená. Ať už máte dotaz, nebo se jen chcete pozdravit, ozvám se co nejdříve!",
+    "button": "Poslat zprávu"
+  },
+  "projects": {
+    "title": "Moje projekty",
+    "all": "Vše",
+    "work": "Pracovní",
+    "personal": "Osobní",
+    "8": {
+      "title": "Notes App",
+      "description": "Aplikace pro poznámky v React + TypeScript s přihlašováním přes magic link. Poznámky jsou uloženy v databázi Supabase a podporují různé typy obsahu — text, nadpisy, seznamy, obrázky a vnořené stránky s možností přetahování."
+    },
+    "7": {
+      "title": "Prospector",
+      "description": "Platforma pro business intelligence postavená na Next.js a TypeScript, která firmám pomáhá najít ideální zákazníky mezi 11 miliony společností ve střední Evropě. Součástí je pokročilá segmentace trhu, detailní profily firem a sledování obchodních příležitostí v reálném čase."
+    },
+    "6": {
+      "title": "Sofian Eshop",
+      "description": "Jeden z několika projektů v rámci Sherwood Digital (a jediný veřejný projekt, který ale již také není dostupný)."
+    },
+    "5": {
+      "title": "Socialbakers Website",
+      "description": "Web společnosti Socialbakers s CMS. Transformovali jsme stávající web z PHP do Next.js. Již není dostupný."
+    },
+    "4": {
+      "title": "Socialbakers Careers",
+      "description": "Kariérní web pro Socialbakers. Samostatný web se seznamem všech otevřených pozic, s filtrováním podle lokace nebo oddělení, napojený na Greenhouse. Již není dostupný."
+    },
+    "3": {
+      "title": "Robotfriends",
+      "description": "Aplikace generující seznam uživatelů z API. Funkce zahrnují filtrování uživatelů, vyhledávací pole, scrollování, načítací stav a chybovou zprávu."
+    },
+    "2": {
+      "title": "Trillo",
+      "description": "Statická HTML stránka s layoutem pomocí flexboxu – bez funkcionality. V projektu jsem se naučila nejen flexbox, ale také práci s preprocesorem Sass, vlastní CSS proměnné, media queries, masky a SVG."
+    },
+    "1": {
+      "title": "Simple ToDo list",
+      "description": "ToDo aplikace na bázi jQuery umožňující přidávat, odebírat a zaškrtávat úkoly, doplněná o CSS animace a efekty."
+    },
+    "0": {
+      "title": "RGB Game",
+      "description": "Malá appka pro trénink znalosti RGB hodnot. Postavená s HTML, CSS a JavaScriptem. Procvičila jsem manipulaci s DOM a zpracování událostí."
+    }
+  },
+  "tags": {
+    "all": "Vše",
+    "work": "Práce",
+    "personal": "Osobní"
+  }
+}
