@@ -118,7 +118,7 @@ const ProjectsSection = () => {
 
   return (
     <section id='projects'>
-      <h2 className='text-center text-4xl font-bold text-[#dbe2f8]  mt-4 md:mt-12 mb-10'>
+      <h2 className='text-center text-4xl font-bold text-subtle-light  mt-4 md:mt-12 mb-10'>
         {t("projects.title")}
       </h2>
       <div className='text-white flex flex-row justify-center items-center gap-2 mb-6 md:mb-10'>

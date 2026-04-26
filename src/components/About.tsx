@@ -31,10 +31,10 @@ const About = () => {
         />
 
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-          <h2 className='text-4xl font-bold text-[#dbe2f8] mb-10'>{t("title")}</h2>
+          <h2 className='text-4xl font-bold text-subtle-light mb-10'>{t("title")}</h2>
 
-          <p className='text-[#dbe2f8] lg:text-lg'>{t("description1")}</p>
-          <p className='text-[#dbe2f8] lg:text-lg mt-4'>{t("description2")}</p>
+          <p className='text-subtle-light lg:text-lg'>{t("description1")}</p>
+          <p className='text-subtle-light lg:text-lg mt-4'>{t("description2")}</p>
 
           <div className='flex flex-row justify-start mt-8 lg:text-lg'>
             {TABS.map((tabId) => (
@@ -48,7 +48,7 @@ const About = () => {
           </div>
 
           <div className='mt-8'>
-            <ul className='list-disc pl-2 text-[#ccd6f6] mx-[0.5rem] lg:text-lg'>
+            <ul className='list-disc pl-2 text-subtle-light mx-[0.5rem] lg:text-lg'>
               {(t.raw(`${tab}.items`) as string[]).map((item: string) => (
                 <li key={item}>{item}</li>
               ))}

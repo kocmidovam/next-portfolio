@@ -18,19 +18,18 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#07080e]/50 backdrop-blur-md border-b border-white/5 shadow-[0_0_24px_0_rgba(45,212,191,0.96)]">
-      <div className="flex items-center justify-between px-6 md:px-11 py-2">
+    <nav className='sticky top-0 z-50 bg-background/50 backdrop-blur-md border-b border-white/5 shadow-[0_0_24px_0_rgba(45,212,191,0.96)]'>
+      <div className='flex items-center justify-between px-6 md:px-11 py-2'>
         {/* Logo */}
-        <Image src="/images/logo.png" alt="Logo" width={50} height={50} priority />
+        <Image src='/images/logo.png' alt='Logo' width={50} height={50} priority />
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex gap-7">
+        <ul className='hidden md:flex gap-7'>
           {navLinks.map(({ label, href }) => (
             <li key={label}>
               <Link
                 href={href}
-                className="font-mono text-[16px] text-[#707088] hover:text-[#22d3ee] transition-colors tracking-widest"
-              >
+                className='font-mono text-[16px] text-subtle hover:text-brand-teal transition-colors tracking-widest'>
                 {label}
               </Link>
             </li>
@@ -38,34 +37,28 @@ const Navbar = () => {
         </ul>
 
         {/* Right side */}
-        <div className="flex items-center gap-3">
+        <div className='flex items-center gap-3'>
           <LanguageSwitcher />
 
           {/* Mobile toggle */}
           <button
             onClick={() => setNavbarOpen((prev) => !prev)}
-            className="md:hidden text-sm font-medium px-2 py-1 border rounded border-[#8892b0] text-[#8892b0] hover:text-white hover:border-white transition-colors"
-          >
-            {navbarOpen ? (
-              <XMarkIcon className="h-5 w-5" />
-            ) : (
-              <Bars3Icon className="h-5 w-5" />
-            )}
+            className='md:hidden text-sm font-medium px-2 py-1 border rounded border-subtle text-subtle hover:text-white hover:border-white transition-colors'>
+            {navbarOpen ? <XMarkIcon className='h-5 w-5' /> : <Bars3Icon className='h-5 w-5' />}
           </button>
         </div>
       </div>
 
       {/* Mobile menu */}
       {navbarOpen && (
-        <div className="md:hidden px-6 pb-4">
-          <ul className="flex flex-col gap-4">
+        <div className='md:hidden px-6 pb-4'>
+          <ul className='flex flex-col gap-4'>
             {navLinks.map(({ label, href }) => (
               <li key={label}>
                 <Link
                   href={href}
                   onClick={() => setNavbarOpen(false)}
-                  className="block font-mono text-[#707088] hover:text-[#22d3ee] transition-colors tracking-widest"
-                >
+                  className='block font-mono text-subtle hover:text-brand transition-colors tracking-widest'>
                   {label}
                 </Link>
               </li>

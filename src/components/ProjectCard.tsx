@@ -21,28 +21,28 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: Props) 
           className='object-cover'
           sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
         />
-        <div className='overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 z-10'>
+        <div className='overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-card bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 z-10'>
           {gitUrl && (
             <Link
               href={gitUrl}
               target='_blank'
-              className='h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
-              <CodeBracketIcon className='h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white' />
+              className='h-14 w-14 mr-2 border-2 relative rounded-full border-subtle hover:border-white group/link'>
+              <CodeBracketIcon className='h-10 w-10 text-subtle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white' />
             </Link>
           )}
           {previewUrl && (
             <Link
               href={previewUrl}
               target='_blank'
-              className='h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link'>
-              <EyeIcon className='h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white' />
+              className='h-14 w-14 border-2 relative rounded-full border-subtle hover:border-white group/link'>
+              <EyeIcon className='h-10 w-10 text-subtle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white' />
             </Link>
           )}
         </div>
       </div>
-      <div className='text-[#dbe2f8] rounded-b-xl mt-3 py-3'>
+      <div className='text-subtle-light rounded-b-xl mt-3 py-3'>
         <h5 className='text-xl font-semibold mb-2'>{title}</h5>
-        <p className='text-[#ADB7BE] md:text-lg'>{description}</p>
+        <p className='text-subtle md:text-lg'>{description}</p>
       </div>
     </div>
   )

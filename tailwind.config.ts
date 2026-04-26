@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
+const colors = require("tailwindcss/colors")
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,20 +8,30 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-            "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       fontFamily: {
-        lato: ['"Lato"', "sans-serif"]
-      }
-    },
-    colors: {
-      ...colors,
-      primary: colors.cyan,
-      secondary: colors.teal,
+        lato: ['"Lato"', "sans-serif"],
+      },
+      colors: {
+        background: "#07080e",
+        foreground: "#f0f0f8",
+        card: "#181818",
+
+        brand: {
+          DEFAULT: "#22d3ee",
+          dark: "#164e63",
+          teal: "#2dd4bf",
+          "teal-light": "#99f6e4",
+        },
+
+        subtle: {
+          DEFAULT: "#ADB7BE",
+          light: "#dbe2f8",
+          dim: "#454560",
+        },
+
+        divider: "#33353F",
+      },
     },
   },
   plugins: [],
-};
+}
