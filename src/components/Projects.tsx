@@ -118,13 +118,28 @@ const ProjectsSection = () => {
 
   return (
     <section id='projects'>
-      <h2 className='text-center text-4xl font-bold text-subtle-light  mt-4 md:mt-12 mb-10'>
+      <h2 className='text-center text-4xl font-bold text-subtle-light mt-4 md:mt-12 mb-10 font-syne'>
         {t("projects.title")}
       </h2>
       <div className='text-white flex flex-row justify-center items-center gap-2 mb-6 md:mb-10'>
-        <ProjectTag onClick={handleTagChange} name={t("projects.all")} value='All' isSelected={tag === "All"} />
-        <ProjectTag onClick={handleTagChange} name={t("projects.work")} value='Work' isSelected={tag === "Work"} />
-        <ProjectTag onClick={handleTagChange} name={t("projects.personal")} value='Personal' isSelected={tag === "Personal"} />
+        <ProjectTag
+          onClick={handleTagChange}
+          name={t("projects.all")}
+          value='All'
+          isSelected={tag === "All"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name={t("projects.work")}
+          value='Work'
+          isSelected={tag === "Work"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name={t("projects.personal")}
+          value='Personal'
+          isSelected={tag === "Personal"}
+        />
       </div>
       <ul ref={ref} className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
         {filteredProjects.map((project: Project, index: number) => (

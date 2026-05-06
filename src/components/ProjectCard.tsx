@@ -41,7 +41,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: Props) 
         </div>
       </div>
       <div className='text-subtle-light rounded-b-xl mt-3 py-3'>
-        <h5 className='text-xl font-semibold mb-2'>{title}</h5>
+        <h5 className='text-xl font-semibold mb-2 font-syne'>{title}</h5>
         <p className='text-subtle md:text-lg'>{description}</p>
       </div>
     </div>

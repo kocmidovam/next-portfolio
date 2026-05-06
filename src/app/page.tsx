@@ -12,7 +12,8 @@ export default function Home() {
       <main className='flex min-h-screen flex-col'>
         <HexBackground />
         <Navbar />
-        <div className='z-10 relative container mt-28 mx-auto px-4 md:px-8 lg:px-16'>
+        
+        <div className='z-10 relative container mx-auto px-4 md:px-8 lg:px-16'>
           <Hero />
           <About />
           <Projects />

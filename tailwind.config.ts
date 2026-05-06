@@ -8,12 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "2xl": "1445px",
+      },
       fontFamily: {
-        lato: ['"Lato"', "sans-serif"],
+        syne: ["var(--font-syne)", "sans-serif"],
+        mono: ["var(--font-space-mono)", "monospace"],
+        jura: ["var(--font-jura)", "sans-serif"],
+        exo2: ["var(--font-exo2)", "sans-serif"],
       },
       colors: {
         background: "#07080e",
-        foreground: "#f0f0f8",
+        foreground: "#c4d0e0",
         card: "#181818",
 
         brand: {
@@ -24,14 +30,15 @@ module.exports = {
         },
 
         subtle: {
-          DEFAULT: "#ADB7BE",
-          light: "#dbe2f8",
+          DEFAULT: "#8898b0",
+          light: "#a8b8cc",
           dim: "#454560",
         },
 
         divider: "#33353F",
       },
     },
+  
   },
   plugins: [],
 }

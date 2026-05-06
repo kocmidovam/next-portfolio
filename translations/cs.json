@@ -1,7 +1,7 @@
 {
   "name": "Marta Kočmídová",
   "navBar": {
-    "about": "O mně",
+    "about": "Kdo jsem",
     "projects": "Projekty",
     "contact": "Kontakt"
   },
@@ -12,8 +12,19 @@
     "knowMore": "Více informací",
     "downloadCV": "Stáhnout CV"
   },
+  "Hero": {
+    "tag": "'{ Medior Frontend Developer }'",
+    "stack": "React · Next.js · TypeScript",
+    "desc": "Vyvíjím responzivní, interaktivní webové aplikace. 5+ let zkušeností ze startupů — otevřená novým příležitostem.",
+    "cta_primary": "Zjistit více",
+    "cta_cv": "Stáhnout CV",
+    "badge_hire": "Hledám nové výzvy",
+    "badge_years": "5+",
+    "badge_years_label": "let zkušeností",
+    "scroll": "scrolluj dolů"
+  },
   "about": {
-    "title": "O mně",
+    "title": "Kdo jsem",
     "description1": "Jsem Marta, Medior Frontend Developer vyvíjející webové aplikace s React, Next.js a TypeScript. Vytvářím responzivní a interaktivní rozhraní a ráda pracuji na projektech, kde mohu smysluplně přispívat a zároveň se učit a růst.",
     "description2": "Mám praktické zkušenosti s moderními frontend workflows, od návrhu komponent po integraci API, a stále hledám příležitosti, jak zdokonalit své dovednosti.",
     "skills": {

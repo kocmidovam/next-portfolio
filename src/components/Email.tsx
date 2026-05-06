@@ -11,7 +11,7 @@ const EmailSection = () => {
       id='contact'
       className='grid md:grid-cols-2 my-12 md:my-12 py-8 md:py-20 gap-12 md:gap-4 relative'>
       <div className='z-10'>
-        <h5 className='text-xl font-bold text-white my-2'>{t("title")}</h5>
+        <h5 className='text-xl font-bold text-white my-2 font-syne'>{t("title")}</h5>
         <p className='text-subtle mb-4 max-w-md md:text-lg'> {t("message")}</p>
         <div className='socials flex flex-row gap-2'>
           <Link href='https://github.com/kocmidovam' target='_blank'>

@@ -1,83 +1,90 @@
 "use client"
-import React from "react"
+
 import Image from "next/image"
-import { TypeAnimation } from "react-type-animation"
-import { motion } from "framer-motion"
 import Link from "next/link"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 
-const Hero = () => {
-  const t = useTranslations("heroBanner")
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault()
-    const href = e.currentTarget.href
-    const targetId = href.replace(/.*\#/, "")
-    const elem = document.getElementById(targetId)
-
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    })
-  }
+export default function Hero() {
+  const t = useTranslations("Hero")
+  const locale = useLocale()
+  const cvHref = locale === "cs" ? "/CV_Kocmidova_CZ.pdf" : "/CV_Kocmidova_EN.pdf"
 
   return (
-    <section className='mb-7 lg:mt-24 lg:mb-40'>
-      <div className='grid grid-cols-1 sm:grid-cols-12'>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className='col-span-7 place-self-center self-start text-center sm:text-left justify-self-center sm:justify-self-start mb-5'>
-          <h1 className='text-[#ccd6f6] mb-7 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold'>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r from-brand-dark to-brand-teal-light'>
-              {t("greeting")}
-            </span>
-            <br></br>
-            <TypeAnimation
-              sequence={[t("name"), 2000, t("jobTitle"), 2000]}
-              wrapper='span'
-              speed={30}
-              repeat={Infinity}
-            />
-          </h1>
-          <div className='px-10 sm:px-0'>
-            <Link
-              href='#about'
-              onClick={handleScroll}
-              className='font-normal px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-brand-dark to-brand-teal hover:bg-gradient-to-r text-white'>
-              {t("knowMore")}
-            </Link>
-            <Link
-              href='/CV_Marta_Kočmídová.pdf'
-              download
-              target='_blank'
-              className='font-normal px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-brand to-brand-teal hover:bg-slate-800 text-white mt-3'>
-              <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
-                {t("downloadCV")}
-              </span>
-            </Link>
+    <section className='relative flex flex-col min-h-[calc(100vh-72px)]'>
+      <div className='relative z-10 flex-1 w-full mt-12 md:mt-20 lg:mt-28 2xl:mt-52'>
+        <div className='flex flex-col md:flex-row justify-between items-center gap-12 lg:gap-16'>
+          <div className='max-w-lg xl:max-w-xl 2xl:max-w-2xl'>
+            <p className='text-brand text-xs lg:text-sm font-mono tracking-[0.08em] mb-4'>
+              {t("tag")}
+            </p>
+
+            <h1 className='text-foreground font-extrabold tracking-wide mb-1 font-exo2 leading-none text-[clamp(42px,4.5vw,85px)]'>
+              Marta
+              <br />
+              Kočmídová
+            </h1>
+
+            <div className='w-10 h-0.5 bg-brand my-4 lg:my-6' />
+
+            <p className='text-subtle-dim text-xs lg:text-sm tracking-[0.18em] uppercase'>
+              {t("stack")}
+            </p>
+
+            <p className='text-subtle leading-relaxed max-w-md mt-5 mb-8'>{t("desc")}</p>
+
+            <div className='flex gap-3 flex-wrap'>
+              <Link
+                href='#about'
+                className='bg-brand text-background font-extrabold px-6 py-3 rounded-sm transition-opacity hover:opacity-90'>
+                {t("cta_primary")}
+              </Link>
+              <a
+                href={cvHref}
+                download
+                className='text-foreground font-extrabold flex items-center gap-1 px-6 py-3 rounded-sm border border-white/15 transition-colors hover:bg-white/5'>
+                {t("cta_cv")}{" "}
+                <svg width='16' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor'>
+                  <path d='M12 5v14M19 12l-7 7-7-7' strokeWidth='2' strokeLinecap='round' />
+                </svg>
+              </a>
+            </div>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className='col-span-5 place-self-center md:place-self-start mt-4 lg:mt-0 md:ml-auto'>
-          <div className='transition duration-500 rounded-full bg-[#181818] w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] relative overflow-hidden shadow-[5px_5px_24px_0_rgba(45,212,191,0.96)] hover:shadow-[5px_5px_50px_2px_rgba(45,212,191,0.96)]'>
-            <Image
-              src='/images/profile-photo.jpg'
-              alt='hero image'
-              fill
-              className='object-cover object-[center_20%]'
-              sizes='(max-width: 1024px) 240px, 350px'
-              priority
-              quality={90}
-            />
+
+          <div className='flex-shrink-0 flex justify-center items-center'>
+            <div className='relative'>
+              <div className='absolute -top-3 right-0 z-10 px-3.5 py-1 rounded-full border border-brand/35 text-brand text-xs whitespace-nowrap bg-background/95 font-mono'>
+                {t("badge_hire")}
+              </div>
+
+              <div className='relative w-[240px] h-[305px] md:w-[320px] md:h-[405px] 2xl:w-[380px] 2xl:h-[480px] border border-brand/50 overflow-hidden rounded-t-full rounded-b-sm'>
+                <Image
+                  src='/images/profile-photo.jpg'
+                  alt='Marta Kočmídová'
+                  fill
+                  className='object-cover object-top'
+                  priority
+                />
+                <span className='absolute top-[18px] left-[18px] w-7 h-7 border-t-[1.5px] border-l-[1.5px] border-brand/60 z-10 pointer-events-none' />
+                <span className='absolute bottom-[18px] right-[18px] w-7 h-7 border-b-[1.5px] border-r-[1.5px] border-brand/60 z-10 pointer-events-none' />
+              </div>
+
+              <div className='absolute -bottom-8 -left-8 z-15 flex flex-col px-4 py-3 rounded-md border border-brand/[0.18] bg-background/[92%]'>
+                <span className='text-foreground text-2xl lg:text-3xl font-extrabold leading-none'>
+                  {t("badge_years")}
+                </span>
+                <span className='text-subtle-dim text-xs font-mono mt-0.5'>
+                  {t("badge_years_label")}
+                </span>
+              </div>
+            </div>
           </div>
-        </motion.div>
+        </div>
+      </div>
+
+      <div className='relative flex z-10 items-center gap-2.5 pb-7 2xl:pb-16 invisible md:visible'>
+        <div className='w-8 h-0.5 bg-brand/40' />
+        <span className='text-subtle text-xs tracking-[0.18em] font-mono'>{t("scroll")}</span>
       </div>
     </section>
   )
 }
-
-export default Hero

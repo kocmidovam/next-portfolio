@@ -12,6 +12,17 @@
     "knowMore": "Know more",
     "downloadCV": "Download CV"
   },
+  "Hero": {
+    "tag": "'{ Medior Frontend Developer }'",
+    "stack": "React · Next.js · TypeScript",
+    "desc": "Building responsive, interactive web applications. 5+ years across startups and scale-ups — open to new opportunities.",
+    "cta_primary": "Know more",
+    "cta_cv": "Download CV",
+    "badge_hire": "Available for hire",
+    "badge_years": "5+",
+    "badge_years_label": "years exp.",
+    "scroll": "scroll down"
+  },
   "about": {
     "title": "About me",
     "description1": "I'm Marta, a Medior Frontend Developer building web applications with React, Next.js, and TypeScript. I create responsive, interactive interfaces and enjoy working on projects where I can contribute meaningfully while continuing to learn and grow.",
