@@ -1,11 +1,11 @@
 "use client"
 
+import React, { Suspense, useEffect } from "react"
 import Script from "next/script"
 import { usePathname, useSearchParams } from "next/navigation"
-import { Suspense, useEffect } from "react"
 import { pageview } from "@/gtagHelper"
 
-function GoogleAnalyticsContent({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }) {
+function GoogleAnalyticsContent({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }): React.ReactNode {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -39,7 +39,7 @@ function GoogleAnalyticsContent({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: stri
   )
 }
 
-export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }) {
+export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: string }): React.ReactNode {
   return (
     <Suspense fallback={null}>
       <GoogleAnalyticsContent GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />

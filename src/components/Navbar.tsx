@@ -1,15 +1,15 @@
 "use client"
 
+import React, { useState } from "react"
 import Link from "next/link"
-import { useState } from "react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import LanguageSwitcher from "./LanguageSwitcher"
 
-const Navbar = () => {
+const Navbar = (): React.ReactNode => {
   const t = useTranslations("navBar")
-  const [navbarOpen, setNavbarOpen] = useState(false)
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false)
 
   const navLinks = [
     { label: t("about"), href: "#about" },

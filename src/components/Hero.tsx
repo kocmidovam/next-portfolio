@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useTranslations, useLocale } from "next-intl"
 
-export default function Hero() {
+export default function Hero(): React.ReactNode {
   const t = useTranslations("Hero")
   const locale = useLocale()
   const cvHref = locale === "cs" ? "/CV_Kocmidova_CZ.pdf" : "/CV_Kocmidova_EN.pdf"

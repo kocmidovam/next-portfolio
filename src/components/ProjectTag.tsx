@@ -1,12 +1,7 @@
 import React from "react";
+import type { ProjectTagProps } from "@/types";
 
-type Props = {
-  name: string;
-  value: string;
-  onClick: (value: string) => void;
-  isSelected: boolean;
-};
-const ProjectTag = ({ name, value, onClick, isSelected }: Props) => {
+const ProjectTag = ({ name, value, onClick, isSelected }: ProjectTagProps): React.ReactNode => {
   const buttonStyles = isSelected
     ? "text-white border-brand"
     : "text-subtle border-slate-600 hover:border-white";

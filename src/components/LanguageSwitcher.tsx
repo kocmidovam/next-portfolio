@@ -1,8 +1,9 @@
 "use client"
+import React from "react"
 import { useLocale } from "next-intl"
 import { useRouter } from "next/navigation"
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = (): React.ReactNode => {
   const locale = useLocale()
   const router = useRouter()
 

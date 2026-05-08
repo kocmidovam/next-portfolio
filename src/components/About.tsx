@@ -1,17 +1,17 @@
 "use client"
-import { useTransition, useState } from "react"
+import React, { useTransition, useState } from "react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import TabButton from "./TabButton"
 
 const TABS = ["skills", "education", "certificates"]
 
-const About = () => {
+const About = (): React.ReactNode => {
   const t = useTranslations("about")
-  const [tab, setTab] = useState("skills")
-  const [isPending, startTransition] = useTransition()
+  const [tab, setTab] = useState<string>("skills")
+  const [, startTransition] = useTransition()
 
-  const handleTabChange = (id: string) => {
+  const handleTabChange = (id: string): void => {
     startTransition(() => {
       setTab(id)
     })

@@ -1,11 +1,9 @@
+import React from "react";
 import Link from "next/link";
+import type { NavLinkProps } from "@/types";
 
-type Props = {
-  href: string;
-  title: string;
-};
-const NavLink = ({ href, title }: Props) => {
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+const NavLink = ({ href, title }: NavLinkProps): React.ReactNode => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void => {
     e.preventDefault();
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, "");

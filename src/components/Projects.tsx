@@ -1,19 +1,10 @@
 "use client"
-import { useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 import ProjectCard from "./ProjectCard"
 import ProjectTag from "./ProjectTag"
 import { motion, useInView } from "framer-motion"
 import { useTranslations } from "next-intl"
-
-type Project = {
-  id: number
-  titleKey: string
-  descriptionKey: string
-  image: string
-  tag: string[]
-  gitUrl: string
-  previewUrl: string
-}
+import type { Project } from "@/types"
 
 const projectsData: Project[] = [
   {
@@ -99,13 +90,13 @@ const projectsData: Project[] = [
   },
 ]
 
-const ProjectsSection = () => {
+const ProjectsSection = (): React.ReactNode => {
   const t = useTranslations()
-  const [tag, setTag] = useState("All")
-  const ref = useRef(null)
+  const [tag, setTag] = useState<string>("All")
+  const ref = useRef<HTMLUListElement>(null)
   const isInView = useInView(ref, { once: true })
 
-  const handleTagChange = (newTag: string) => {
+  const handleTagChange = (newTag: string): void => {
     setTag(newTag)
   }
 

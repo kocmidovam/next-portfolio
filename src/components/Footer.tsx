@@ -1,7 +1,8 @@
+import React from "react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 
-const Footer = () => {
+const Footer = (): React.ReactNode => {
   const t = useTranslations()
   return (
     <footer className='footer border z-10 border-t-divider border-l-0 border-r-0 border-b-0 text-white'>

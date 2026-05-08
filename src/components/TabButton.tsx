@@ -1,18 +1,13 @@
 import React from "react"
 import { motion } from "framer-motion"
+import type { TabButtonProps } from "@/types"
 
 const variants = {
   default: { width: 0 },
   active: { width: "calc(100% - 0.75rem)" },
 }
 
-type Props = {
-  active: boolean
-  selectTab: () => void
-  children: string[] | string
-}
-
-const TabButton = ({ active, selectTab, children }: Props) => {
+const TabButton = ({ active, selectTab, children }: TabButtonProps): React.ReactNode => {
   const buttonClasses = active ? "text-subtle-light" : "text-subtle"
 
   return (

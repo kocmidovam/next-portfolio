@@ -1,5 +1,7 @@
 "use client"
 
+import React from "react"
+
 // Tile dimensions for the offset hex grid (R=18, pointy-top)
 // width = R * sqrt(3) ≈ 31.18,  height = R * 3 = 54
 const HEX_W = 31.18
@@ -23,7 +25,7 @@ const DATA_URI = `url("data:image/svg+xml,${TILE}")`
 const CSS_MASK =
   "linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.4) 90%, rgba(255,255,255,0.6) 100%)"
 
-const HexBackground = () => {
+const HexBackground = (): React.ReactNode => {
   return (
     <div className="fixed inset-0 z-0 pointer-events-none bg-[#0b0d19]">
       <div
