@@ -24,7 +24,7 @@ const EmailSection = () => {
       </div>
       <div className='flex justify-center items-center'>
         <Link
-          href='mailto:kocmidova.marta@seznam.cz'
+          href='mailto:kocmidova.marta@gmail.com'
           target='_blank'
           className='transition-all z-10 text-white font-medium py-2.5 px-5 rounded-lg w-max bg-gradient-to-r from-brand-dark to-brand-teal hover:bg-gradient-to-tr h-max'>
           {t("button")}
