@@ -13,45 +13,43 @@
     "downloadCV": "Stáhnout CV"
   },
   "Hero": {
-    "tag": "'{ Medior Frontend Developer }'",
+    "tag": "'{ Frontend Developer }'",
     "stack": "React · Next.js · TypeScript",
-    "desc": "Vyvíjím responzivní, interaktivní webové aplikace. 5+ let zkušeností ze startupů — otevřená novým příležitostem.",
+    "desc": "Vyvíjím responzivní, interaktivní webové aplikace. 6 let zkušeností ze startupů — otevřená novým příležitostem.",
     "cta_primary": "Zjistit více",
     "cta_cv": "Stáhnout CV",
     "badge_hire": "Hledám nové výzvy",
-    "badge_years": "5+",
+    "badge_years": "6",
     "badge_years_label": "let zkušeností",
     "scroll": "scrolluj dolů"
   },
   "about": {
     "title": "Kdo jsem",
-    "description1": "Jsem Marta, Medior Frontend Developer vyvíjející webové aplikace s React, Next.js a TypeScript. Vytvářím responzivní a interaktivní rozhraní a ráda pracuji na projektech, kde mohu smysluplně přispívat a zároveň se učit a růst.",
-    "description2": "Mám praktické zkušenosti s moderními frontend workflows, od návrhu komponent po integraci API, a stále hledám příležitosti, jak zdokonalit své dovednosti.",
+    "paragraphs": [
+      "Jsem Marta, frontend developerka z Prahy.",
+      "Vyvíjím webové aplikace s Reactem, Next.js a TypeScriptem. Mám 6 let zkušeností z produktových i klientských projektů, od veřejných webů a e-commerce flow až po větší frontendové aplikace a modernizační projekty.",
+      "Baví mě tvořit čistá, udržitelná rozhraní a řešit části aplikací, kde se potkává UI, práce s daty a aplikační stav. V poslední době se víc zaměřuji na produktový frontend, GraphQL, state management a zlepšování existující frontendové architektury.",
+      "Zároveň mě zajímá postupný posun směrem k fullstack vývoji, hlavně s Node.js."
+    ],
     "skills": {
       "title": "Dovednosti",
       "items": [
         "React",
-        "NextJs",
+        "Next.js",
         "TypeScript",
-        "Redux",
         "JavaScript",
-        "REST API",
         "GraphQL",
-        "Tailwind"
+        "REST APIs",
+        "Redux",
+        "Zustand",
+        "Tailwind CSS",
+        "SCSS",
+        "React Hook Form",
+        "Playwright",
+        "i18n / Localization",
+        "Responsive UI",
+        "Node.js"
       ]
-    },
-    "education": {
-      "title": "Vzdělání",
-      "items": [
-        "Zkušenosti z praxe",
-        "Frontend Developer Hatchery, Unicorn",
-        "The Complete Web Developer, Udemy",
-        "Střední průmyslová škola oděvní"
-      ]
-    },
-    "certificates": {
-      "title": "Certifikáty",
-      "items": ["First Certificate in English, Univerzita v Cambridge"]
     }
   },
   "email": {
@@ -64,41 +62,378 @@
     "all": "Vše",
     "work": "Pracovní",
     "personal": "Osobní",
-    "8": {
-      "title": "Notes App",
-      "description": "Aplikace pro poznámky v React + TypeScript s přihlašováním přes magic link. Poznámky jsou uloženy v databázi Supabase a podporují různé typy obsahu — text, nadpisy, seznamy, obrázky a vnořené stránky s možností přetahování."
+    "caseStudyButton": "Otevřít case study",
+    "closeCaseStudy": "Zavřít case study",
+    "caseStudyLabels": {
+      "type": "Typ",
+      "year": "Rok",
+      "role": "Role",
+      "stack": "Stack",
+      "overview": "Přehled",
+      "problem": "Problém",
+      "myRole": "Moje role",
+      "whatIWorkedOn": "Na čem jsem pracovala",
+      "whatIDid": "Co jsem dělala",
+      "outcome": "Výsledek",
+      "whatILearned": "Co jsem se naučila",
+      "whyItMattered": "Proč to bylo důležité",
+      "projectShows": "Co ten projekt ukazuje"
     },
-    "7": {
+    "0": {
       "title": "Prospector",
-      "description": "Platforma pro business intelligence postavená na Next.js a TypeScript, která firmám pomáhá najít ideální zákazníky mezi 11 miliony společností ve střední Evropě. Součástí je pokročilá segmentace trhu, detailní profily firem a sledování obchodních příležitostí v reálném čase."
+      "description": "Sales intelligence platforma BizMachine pro vyhledávání firemních dat a segmentaci. Podílela jsem se na frontendovém přepisu do Next.js 14, vyhledávání a filtrování, GraphQL integraci, Zustand state managementu a sdílených UI komponentách.",
+      "highlights": [
+        "Sales intelligence platforma BizMachine pro vyhledávání firemních dat a segmentaci.",
+        "Podílela jsem se na frontendovém přepisu do Next.js 14.",
+        "UX vyhledávání a filtrování, GraphQL integrace, Zustand a sdílené UI komponenty."
+      ],
+      "techStack": [
+        "Next.js 14",
+        "React",
+        "TypeScript",
+        "GraphQL",
+        "Generated types and hooks",
+        "Zustand",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Playwright"
+      ],
+      "caseStudy": {
+        "subtitle": "Sales Intelligence Platform",
+        "type": "Produkt BizMachine",
+        "year": "2024-2025",
+        "role": "Frontend developer",
+        "overview": [
+          "Prospector je sales intelligence produkt BizMachine pro vyhledávání firem, segmentaci trhu, exporty a CRM workflow.",
+          "Podílela jsem se na frontendovém přepisu a modernizaci datově náročného produktu, kde jsou vyhledávání, filtry a segmentace klíčové uživatelské workflow."
+        ],
+        "myRole": "Pracovala jsem jako frontend developer pro BizMachine. Moje práce se soustředila na Next.js 14 obrazovky, UX vyhledávání a filtrování, GraphQL integraci, Zustand state management a sdílené UI komponenty.",
+        "workSections": [
+          {
+            "title": "Modern Frontend Architecture",
+            "paragraphs": [
+              "Stavěla a refaktorovala jsem produktové obrazovky během migrace na Next.js 14 a pomáhala posouvat aplikaci k čistší a lépe udržovatelné frontendové struktuře."
+            ]
+          },
+          {
+            "title": "Complex Data Workflows",
+            "paragraphs": [
+              "Pracovala jsem na výsledcích vyhledávání, filtrech, firemních segmentech a datově řízených interakcích, kde uživatelé potřebují rychle zúžit velké datasety firem."
+            ]
+          },
+          {
+            "title": "Typed Data and State",
+            "paragraphs": [
+              "Integrovala jsem GraphQL queries, generované typy a hooky a používala Zustand pro UI stav kolem filtrů, vybraných dat a sdílených interakcí."
+            ]
+          }
+        ],
+        "whyItMattered": "Frontend musel udělat komplexní firemní data rychle vyhledatelná, filtrovatelná a srozumitelná pro sales uživatele.",
+        "projectShows": "Moderní Next.js produktový vývoj, GraphQL datová vrstva, state management a udržovatelné UI pro komplexní datová workflow."
+      }
     },
-    "6": {
-      "title": "Sofian Eshop",
-      "description": "Jeden z několika projektů v rámci Sherwood Digital (a jediný veřejný projekt, který ale již také není dostupný)."
+    "1": {
+      "title": "Case Management Platform",
+      "description": "Enterprise platforma pro správu případů a dynamické procesní formuláře. Pracovala jsem na React/Redux frontend vrstvě, konfigurovatelných widgetech, validační logice, přehledu případů a zákaznických úpravách UI.",
+      "highlights": [
+        "Enterprise platforma pro správu případů a dynamické procesní formuláře.",
+        "React/Redux frontend vrstva, konfigurovatelné widgety a validační logika.",
+        "Přehled případů, procesní UI a zákaznické úpravy rozhraní."
+      ],
+      "techStack": [
+        "React",
+        "Redux",
+        "TypeScript",
+        "REST API",
+        "axios",
+        "i18next",
+        "SCSS",
+        "React hooks",
+        "Calendly integration",
+        "Docker/Nginx"
+      ],
+      "caseStudy": {
+        "subtitle": "Enterprise Case Management Platform",
+        "type": "Enterprise produkt",
+        "year": "2022-2023",
+        "role": "React developer",
+        "overview": [
+          "Enterprise platforma pro správu případů, úkolů a dynamických procesních formulářů.",
+          "Moje práce se soustředila na konfigurovatelné rozhraní, chování formulářů a úpravy pro konkrétní zákaznická nasazení, bez zveřejnění důvěrných produktových detailů."
+        ],
+        "myRole": "Pracovala jsem jako React developer na frontendové vrstvě v Reactu a Reduxu, hlavně kolem dynamických formulářových widgetů, validační logiky, procesní navigace a lokalizovaného uživatelského rozhraní.",
+        "workSections": [
+          {
+            "title": "Dynamické formuláře a widgety",
+            "paragraphs": [
+              "Stavěla a upravovala jsem konfigurovatelné widgety pro procesní formuláře, například vyhledávací pole, dokumentová pole, rozsahy dat, Calendly integraci a další vstupy navázané na konkrétní workflow."
+            ]
+          },
+          {
+            "title": "Validace a rozhraní pro práci s případy",
+            "paragraphs": [
+              "Řešila jsem povinná pole, validační chyby, režimy pro čtení nebo náhled, přehled případů a navigaci v procesu."
+            ]
+          },
+          {
+            "title": "Integrace a zákaznické úpravy",
+            "paragraphs": [
+              "Napojovala jsem rozhraní na REST API, pracovala s lokalizací přes i18next a upravovala vzhled i chování aplikace pro různá zákaznická nasazení."
+            ]
+          }
+        ],
+        "whyItMattered": "UI muselo zůstat konzistentní a zároveň podporovat různé procesní konfigurace, typy widgetů a zákaznická workflow.",
+        "projectShows": "Enterprise React/Redux vývoj, dynamické formuláře, znovupoužitelné widgety, validace, lokalizace a konfigurovatelné UI."
+      }
     },
-    "5": {
+    "2": {
+      "title": "Sherwood E-commerce Projects",
+      "description": "Frontendová práce napříč e-commerce projekty a interními platformami. Pracovala jsem s Reactem, Reduxem, REST API, checkout flow, formuláři, lokalizací, znovupoužitelnými komponentami a responzivními šablonami.",
+      "highlights": [
+        "Frontendová práce napříč e-commerce projekty a interními platformami.",
+        "React, Redux a REST API integrace.",
+        "Checkout flow, formuláře, lokalizace, znovupoužitelné komponenty a responzivní šablony."
+      ],
+      "techStack": [
+        "React",
+        "Redux",
+        "Redux Thunk",
+        "REST API",
+        "Axios",
+        "react-hook-form",
+        "Yup",
+        "react-intl",
+        "LESS/SCSS",
+        "HTML/CSS",
+        "Reusable React components"
+      ],
+      "caseStudy": {
+        "subtitle": "E-commerce & Internal Platforms",
+        "type": "Agentura / klientské projekty",
+        "year": "2021-2022",
+        "role": "Web / frontend developer",
+        "overview": [
+          "V Sherwood Digital jsem získala širokou frontendovou zkušenost napříč klientskými e-commerce projekty, interními platformami a sdílenými React komponentami.",
+          "Práce zahrnovala produkční šablony, checkout flow, formuláře, moduly napojené na API a responzivní rozhraní."
+        ],
+        "myRole": "Pracovala jsem jako web / frontend developer na klientských e-commerce projektech a interních nástrojích s Reactem, Reduxem, REST API, formuláři, lokalizací a LESS/SCSS.",
+        "workSections": [
+          {
+            "title": "E-commerce UI a checkout",
+            "paragraphs": [
+              "Pracovala jsem na responzivních e-commerce šablonách a checkout flow se stavem košíku, adresami, výběrem dopravy/platby a souhrnem objednávky."
+            ]
+          },
+          {
+            "title": "Formuláře, stav a API",
+            "paragraphs": [
+              "Používala jsem Redux, Redux Thunk, REST API, Axios, react-hook-form a Yup pro vícekrokové uživatelské flow a rozhraní pracující s daty z API."
+            ]
+          },
+          {
+            "title": "Znovupoužitelné komponenty",
+            "paragraphs": [
+              "Stavěla jsem sdílené React komponenty a pracovala na interních modulech, lokalizaci a responzivním produkčním stylingu."
+            ]
+          }
+        ],
+        "whyItMattered": "Hodnota byla v rozmanitosti: reálné klientské projekty, transakční flow, interní nástroje a sdílené komponenty.",
+        "projectShows": "Adaptabilitu napříč codebase, produkční UI delivery, formuláře, state management, REST API integraci a znovupoužitelné React komponenty."
+      }
+    },
+    "3": {
       "title": "Socialbakers Website",
-      "description": "Web společnosti Socialbakers s CMS. Transformovali jsme stávající web z PHP do Next.js. Již není dostupný."
+      "description": "Veřejný firemní web Socialbakers, nástroje pro social media marketing a analytiku. Pracovala jsem na údržbě webu, nových stránkách a komponentách, responzivních úpravách UI, produkčních opravách a přepisu starších PHP částí webu do Next.js.",
+      "highlights": [
+        "Veřejný firemní web Socialbakers, nástroje pro social media marketing a analytiku.",
+        "Údržba webu, nové stránky a komponenty.",
+        "Responzivní UI úpravy, produkční opravy a přepis starších PHP částí do Next.js."
+      ],
+      "techStack": ["Next.js", "React", "PHP", "WordPress", "HTML", "CSS/SCSS"],
+      "caseStudy": {
+        "subtitle": "Public Company Website",
+        "type": "Firemní web",
+        "year": "2019-2021",
+        "role": "Web developer",
+        "overview": [
+          "Veřejný firemní web Socialbakers včetně marketingových stránek, kariérního obsahu a WordPress blogu.",
+          "Pracovala jsem na frontendové údržbě, nových stránkách, responzivním UI a postupném přesunu starších PHP částí do Next.js."
+        ],
+        "myRole": "Pracovala jsem jako web developer na nových stránkách a komponentách, produkčních opravách, responzivních úpravách layoutu a postupném přepisu starších PHP částí webu do Next.js.",
+        "workSections": [
+          {
+            "title": "Veřejný firemní web",
+            "paragraphs": [
+              "Udržovala a vylepšovala jsem živé veřejné stránky včetně úprav layoutu, obsahových změn a responzivních oprav."
+            ]
+          },
+          {
+            "title": "Komponenty a produkční opravy",
+            "paragraphs": [
+              "Stavěla jsem znovupoužitelné frontendové komponenty a řešila problémy v rozhraní na produkčním webu používaném reálnými návštěvníky."
+            ]
+          },
+          {
+            "title": "Přechod z PHP do Next.js",
+            "paragraphs": [
+              "Podporovala jsem přepis starších PHP částí webu do modernějšího Next.js frontendu."
+            ]
+          }
+        ],
+        "projectShows": "Údržbu veřejného webu, responzivní UI, znovupoužitelné komponenty, produkční bug fixing a postupnou frontendovou modernizaci."
+      }
     },
     "4": {
       "title": "Socialbakers Careers",
-      "description": "Kariérní web pro Socialbakers. Samostatný web se seznamem všech otevřených pozic, s filtrováním podle lokace nebo oddělení, napojený na Greenhouse. Již není dostupný."
+      "description": "Kariérní web pro Socialbakers. Pracovala jsem na frontendové implementaci, responzivním rozhraní, výpisu pracovních pozic, filtrování a napojení na Greenhouse.",
+      "highlights": [
+        "Kariérní web pro Socialbakers.",
+        "Frontendová implementace a responzivní rozhraní.",
+        "Výpis pracovních pozic, filtrování a napojení na Greenhouse."
+      ],
+      "techStack": [
+        "React",
+        "Next.js",
+        "Napojení na Greenhouse",
+        "HTML",
+        "CSS/SCSS"
+      ],
+      "caseStudy": {
+        "subtitle": "Kariérní web",
+        "type": "Firemní web",
+        "year": "2019-2021",
+        "role": "Web developer",
+        "overview": [
+          "Veřejný kariérní web Socialbakers s náborovým obsahem, výpisem pozic, filtrováním a napojením na Greenhouse."
+        ],
+        "myRole": "Pracovala jsem na frontendové implementaci, responzivních úpravách layoutu, komponentách pro pracovní pozice, filtrování a obsahových změnách.",
+        "workSections": [
+          {
+            "title": "Kariérní web",
+            "paragraphs": [
+              "Implementovala a udržovala jsem responzivní kariérní stránky sladěné s vizuálním stylem Socialbakers."
+            ]
+          },
+          {
+            "title": "Pozice a Greenhouse",
+            "paragraphs": [
+              "Pracovala jsem na výpisu pozic, filtrování podle lokace nebo oddělení a frontendovém zobrazení dat z Greenhouse."
+            ]
+          },
+          {
+            "title": "Produkční úpravy",
+            "paragraphs": [
+              "Podporovala jsem obsahové změny, UI úpravy a produkční opravy pro veřejný firemní web."
+            ]
+          }
+        ],
+        "projectShows": "Responzivní veřejné weby, rozhraní pro výpis pozic, filtrování, integraci externí služby a produkční údržbu."
+      }
     },
-    "3": {
+    "5": {
+      "title": "Notes App",
+      "description": "Osobní fullstack notes app s autentizací, vnořenými stránkami a blokovým editorem.",
+      "techStack": ["React", "TypeScript", "Supabase", "Tailwind CSS"],
+      "caseStudy": {
+        "subtitle": "Fullstack Notes Application",
+        "type": "Osobní produkt",
+        "year": "2025",
+        "role": "Frontend / fullstack",
+        "problem": "Chtěla jsem si vyzkoušet produktovější notes aplikaci s autentizací, perzistentními daty, vnořenými stránkami a flexibilní editací obsahu.",
+        "myRole": "Navrhla a postavila jsem aplikaci end to end se zaměřením na interakce editoru, strukturu stránek, autentizaci a ukládání dat přes Supabase.",
+        "whatIDid": [
+          "Postavila jsem autentizaci a databázové ukládání poznámek přes Supabase",
+          "Implementovala jsem blokový editor pro různé typy obsahu",
+          "Přidala jsem vnořené stránky a hierarchii obsahu",
+          "Vytvořila jsem drag-and-drop řazení",
+          "Skládala jsem editor a navigaci ze znovupoužitelných React komponent"
+        ],
+        "outcome": "Projekt mi pomohl procvičit produktové přemýšlení kolem editor UX, perzistence dat a fullstack React architektury."
+      }
+    },
+    "6": {
       "title": "Robotfriends",
-      "description": "Aplikace generující seznam uživatelů z API. Funkce zahrnují filtrování uživatelů, vyhledávací pole, scrollování, načítací stav a chybovou zprávu."
+      "description": "Osobní React projekt pro vykreslení API dat, vyhledávání a filtrování.",
+      "techStack": ["React", "REST API", "JavaScript", "CSS"],
+      "caseStudy": {
+        "subtitle": "React API Data Project",
+        "type": "Osobní / learning",
+        "year": "2019",
+        "role": "Frontend",
+        "problem": "Projekt vznikl jako procvičení renderování vzdálených dat, filtrování seznamů a základních UI stavů v Reactu.",
+        "myRole": "Implementovala jsem UI, načítala uživatelská data z API a postavila vyhledávání a filtrování kolem znovupoužitelných komponent.",
+        "whatIDid": [
+          "Vykreslovala jsem API data do znovupoužitelných card komponent",
+          "Přidala jsem vyhledávání a filtrování seznamu uživatelů",
+          "Řešila jsem loading a error stavy",
+          "Procvičila jsem kompozici komponent a aktualizace stavu",
+          "Nasadila jsem projekt jako malou veřejnou ukázku"
+        ],
+        "outcome": "Projekt posílil moje základy kolem React komponent, API dat a interaktivního UI stavu."
+      }
     },
-    "2": {
+    "7": {
       "title": "Trillo",
-      "description": "Statická HTML stránka s layoutem pomocí flexboxu – bez funkcionality. V projektu jsem se naučila nejen flexbox, ale také práci s preprocesorem Sass, vlastní CSS proměnné, media queries, masky a SVG."
+      "description": "Statický responzivní layout zaměřený na Flexbox, Sass a SVG styling.",
+      "techStack": ["HTML", "Sass", "Flexbox", "Responsive CSS", "SVG"],
+      "caseStudy": {
+        "subtitle": "Responsive Layout Practice",
+        "type": "Osobní / learning",
+        "year": "2018",
+        "role": "Frontend",
+        "problem": "Chtěla jsem si procvičit tvorbu vyladěného statického rozhraní s responzivním layoutem a pokročilejší CSS organizací.",
+        "myRole": "Implementovala jsem layout a styling od začátku se zaměřením na Flexbox strukturu, Sass organizaci a responzivní chování.",
+        "whatIDid": [
+          "Postavila jsem statický hotel booking layout",
+          "Použila jsem Flexbox pro hlavní strukturu stránky",
+          "Organizovala jsem styly pomocí Sass",
+          "Procvičila jsem CSS proměnné, masky a SVG assety",
+          "Upravovala jsem layout napříč responzivními breakpointy"
+        ],
+        "outcome": "Projekt mi dal větší jistotu v responzivním CSS, skládání layoutů a vizuálních implementačních detailech."
+      }
     },
-    "1": {
+    "8": {
       "title": "Simple ToDo list",
-      "description": "ToDo aplikace na bázi jQuery umožňující přidávat, odebírat a zaškrtávat úkoly, doplněná o CSS animace a efekty."
+      "description": "Malá jQuery ToDo appka s vytvářením úkolů, stavem dokončení a animacemi.",
+      "techStack": ["jQuery", "JavaScript", "HTML", "CSS"],
+      "caseStudy": {
+        "subtitle": "Interactive ToDo App",
+        "type": "Osobní / learning",
+        "year": "2018",
+        "role": "Frontend",
+        "problem": "Cílem bylo procvičit DOM manipulaci a základní interaktivní chování aplikace ještě před hlubší prací s komponentovými frameworky.",
+        "myRole": "Postavila jsem task interakce, UI stavy a malé CSS efekty pomocí jQuery a čistých frontendových základů.",
+        "whatIDid": [
+          "Přidala jsem vytváření a mazání úkolů",
+          "Implementovala jsem checked a unchecked stavy úkolů",
+          "Použila jsem jQuery pro DOM update a event handling",
+          "Doplnila jsem drobné CSS animace a hover efekty",
+          "Procvičila jsem strukturu jednoduchého interaktivního UI"
+        ],
+        "outcome": "Projekt mi pomohl upevnit JavaScript a DOM základy, na kterých se později lépe chápal React state management."
+      }
     },
-    "0": {
+    "9": {
       "title": "RGB Game",
-      "description": "Malá appka pro trénink znalosti RGB hodnot. Postavená s HTML, CSS a JavaScriptem. Procvičila jsem manipulaci s DOM a zpracování událostí."
+      "description": "Malá hra na hádání barev pro procvičení eventů a DOM updatů v JavaScriptu.",
+      "techStack": ["JavaScript", "HTML", "CSS", "DOM"],
+      "caseStudy": {
+        "subtitle": "Color Guessing Game",
+        "type": "Osobní / learning",
+        "year": "2018",
+        "role": "Frontend",
+        "problem": "Hra byla kompaktní způsob, jak si procvičit interakci s uživatelem, generování náhodného stavu a vizuální feedback v čistém JavaScriptu.",
+        "myRole": "Implementovala jsem herní logiku, generování barev, obtížnosti a DOM updaty pro celé UI.",
+        "whatIDid": [
+          "Generovala jsem náhodné RGB barevné možnosti",
+          "Řešila jsem uživatelské tipy a feedback stavy",
+          "Přidala jsem easy a hard režim",
+          "Aktualizovala jsem rozhraní přes čistou DOM manipulaci",
+          "Procvičila jsem event handling a logiku malé aplikace"
+        ],
+        "outcome": "Projekt upevnil základní JavaScript koncepty skrze jednoduchou, vizuální a interaktivní browser hru."
+      }
     }
   },
   "tags": {

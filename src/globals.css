@@ -8,3 +8,27 @@ body {
   font-family: var(--font-jura), sans-serif;
   font-weight: 400;
 }
+
+.project-case-study-scrollbar {
+  scrollbar-color: theme("colors.brand.dark") theme("colors.card");
+  scrollbar-width: thin;
+}
+
+.project-case-study-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.project-case-study-scrollbar::-webkit-scrollbar-track {
+  background: theme("colors.card");
+  border-left: 1px solid theme("colors.divider");
+}
+
+.project-case-study-scrollbar::-webkit-scrollbar-thumb {
+  background-color: theme("colors.brand.dark");
+  border: 2px solid theme("colors.card");
+  border-radius: 999px;
+}
+
+.project-case-study-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: theme("colors.brand.DEFAULT");
+}

@@ -13,45 +13,43 @@
     "downloadCV": "Download CV"
   },
   "Hero": {
-    "tag": "'{ Medior Frontend Developer }'",
+    "tag": "'{ Frontend Developer }'",
     "stack": "React · Next.js · TypeScript",
-    "desc": "Building responsive, interactive web applications. 5+ years across startups and scale-ups — open to new opportunities.",
+    "desc": "Building responsive, interactive web applications. 6 years across startups and scale-ups — open to new opportunities.",
     "cta_primary": "Know more",
     "cta_cv": "Download CV",
     "badge_hire": "Available for hire",
-    "badge_years": "5+",
+    "badge_years": "6",
     "badge_years_label": "years exp.",
     "scroll": "scroll down"
   },
   "about": {
     "title": "About me",
-    "description1": "I'm Marta, a Medior Frontend Developer building web applications with React, Next.js, and TypeScript. I create responsive, interactive interfaces and enjoy working on projects where I can contribute meaningfully while continuing to learn and grow.",
-    "description2": "I have hands-on experience with modern frontend workflows, from component design to API integration, and I'm always looking for opportunities to refine my craft.",
+    "paragraphs": [
+      "I'm Marta, a frontend developer based in Prague.",
+      "I build web applications with React, Next.js and TypeScript. I have 6 years of experience working on product and client-facing projects, from public websites and e-commerce flows to larger frontend applications and modernization projects.",
+      "I enjoy creating clean, maintainable interfaces and working on features where UI, data handling and application state come together. Recently, I’ve been focusing more on product frontend, GraphQL, state management and improving existing frontend architecture.",
+      "I’m also interested in gradually moving towards fullstack development, especially with Node.js."
+    ],
     "skills": {
       "title": "Skills",
       "items": [
         "React",
-        "NextJs",
+        "Next.js",
         "TypeScript",
-        "Redux",
         "JavaScript",
-        "REST API",
         "GraphQL",
-        "Tailwind"
+        "REST APIs",
+        "Redux",
+        "Zustand",
+        "Tailwind CSS",
+        "SCSS",
+        "React Hook Form",
+        "Playwright",
+        "i18n / Localization",
+        "Responsive UI",
+        "Node.js"
       ]
-    },
-    "education": {
-      "title": "Education",
-      "items": [
-        "Experience from work",
-        "Frontend Developer Hatchery, Unicorn",
-        "The Complete Web Developer, Udemy",
-        "Secondary industrial school of clothing"
-      ]
-    },
-    "certificates": {
-      "title": "Certificates",
-      "items": ["First Certificate in English, University of Cambridge"]
     }
   },
 
@@ -65,41 +63,378 @@
     "all": "All",
     "work": "Work",
     "personal": "Personal",
-    "8": {
-      "title": "Notes App",
-      "description": "A React + TypeScript notes application with magic link authentication and Supabase database. Features a block-based editor supporting text, headings, lists, images, and nested pages with drag-and-drop reordering."
+    "caseStudyButton": "Read case study",
+    "closeCaseStudy": "Close case study",
+    "caseStudyLabels": {
+      "type": "Type",
+      "year": "Year",
+      "role": "Role",
+      "stack": "Stack",
+      "overview": "Overview",
+      "problem": "The Problem",
+      "myRole": "My Role",
+      "whatIWorkedOn": "What I Worked On",
+      "whatIDid": "What I Did",
+      "outcome": "Outcome",
+      "whatILearned": "What I Learned",
+      "whyItMattered": "Why It Mattered",
+      "projectShows": "What This Project Shows"
     },
-    "7": {
+    "0": {
       "title": "Prospector",
-      "description": "Business intelligence platform built with Next.js and TypeScript, helping businesses find ideal customers across 11M companies in Central Europe. Features advanced market segmentation, detailed company profiles, and real-time opportunity tracking."
+      "description": "BizMachine sales intelligence platform for company data search and segmentation. I contributed to the frontend rewrite to Next.js 14, search and filtering experience, GraphQL integration, Zustand state management and shared UI components.",
+      "highlights": [
+        "BizMachine sales intelligence platform for company data search and segmentation.",
+        "Frontend contribution to the rewrite to Next.js 14.",
+        "Search and filtering UX, GraphQL integration, Zustand and shared UI components."
+      ],
+      "techStack": [
+        "Next.js 14",
+        "React",
+        "TypeScript",
+        "GraphQL",
+        "Generated types and hooks",
+        "Zustand",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Playwright"
+      ],
+      "caseStudy": {
+        "subtitle": "Sales Intelligence Platform",
+        "type": "BizMachine product",
+        "year": "2024-2025",
+        "role": "Frontend developer",
+        "overview": [
+          "Prospector is a BizMachine sales intelligence product for company search, market segmentation, exports and CRM workflows.",
+          "I contributed to the frontend rewrite and modernization of a data-heavy product where search, filters and segmentation are core user workflows."
+        ],
+        "myRole": "I worked as a frontend developer for BizMachine. My contribution focused on Next.js 14 screens, search and filtering UX, GraphQL integration, Zustand state management and shared UI components.",
+        "workSections": [
+          {
+            "title": "Modern Frontend Architecture",
+            "paragraphs": [
+              "Built and refactored product screens during the migration to Next.js 14, helping move the app towards a cleaner, more maintainable frontend structure."
+            ]
+          },
+          {
+            "title": "Complex Data Workflows",
+            "paragraphs": [
+              "Worked on search results, filters, company segments and data-driven interactions where users need to quickly narrow down large company datasets."
+            ]
+          },
+          {
+            "title": "Typed Data and State",
+            "paragraphs": [
+              "Integrated GraphQL queries, generated types and hooks, and used Zustand for UI state around filters, selected data and shared interactions."
+            ]
+          }
+        ],
+        "whyItMattered": "The frontend had to make complex company data fast, searchable and understandable for sales users.",
+        "projectShows": "Modern Next.js product development, GraphQL data handling, state management and maintainable UI for complex data workflows."
+      }
     },
-    "6": {
-      "title": "Sofian Eshop",
-      "description": "One of several projects as part of Sherwood Digital (and only public project, but now also no longer available)."
+    "1": {
+      "title": "Case Management Platform",
+      "description": "Enterprise case-management platform for dynamic business process forms. I worked on the React/Redux frontend layer, configurable widgets, validation logic, case overview and customer-specific UI customization.",
+      "highlights": [
+        "Enterprise case-management platform for dynamic business process forms.",
+        "React/Redux frontend layer with configurable widgets and validation logic.",
+        "Case overview, process UI and customer-specific customization."
+      ],
+      "techStack": [
+        "React",
+        "Redux",
+        "TypeScript",
+        "REST API",
+        "axios",
+        "i18next",
+        "SCSS",
+        "React hooks",
+        "Calendly integration",
+        "Docker/Nginx"
+      ],
+      "caseStudy": {
+        "subtitle": "Enterprise Case Management Platform",
+        "type": "Enterprise product",
+        "year": "2022-2023",
+        "role": "React developer",
+        "overview": [
+          "Enterprise workflow and case-management platform for dynamic business processes, cases, tasks and process-driven forms.",
+          "My work focused on configurable frontend UI, form behavior and customer-specific customization without exposing confidential product details."
+        ],
+        "myRole": "I worked as a React developer on the React/Redux frontend layer, mostly around dynamic form widgets, validation logic, process navigation and localized customer-specific UI.",
+        "workSections": [
+          {
+            "title": "Dynamic Forms and Widgets",
+            "paragraphs": [
+              "Built and adjusted configurable widgets used inside process-driven forms, including search fields, document fields, date ranges, Calendly integration and workflow-specific inputs."
+            ]
+          },
+          {
+            "title": "Validation and Case UI",
+            "paragraphs": [
+              "Worked on required states, validation errors, read-only/preview modes, case overview screens and process navigation."
+            ]
+          },
+          {
+            "title": "Integration and Customization",
+            "paragraphs": [
+              "Connected UI to REST APIs, worked with i18next localization and implemented customer-specific styling and behavior for different deployments."
+            ]
+          }
+        ],
+        "whyItMattered": "The UI had to stay consistent while supporting many process configurations, widget types and customer-specific workflows.",
+        "projectShows": "Enterprise React/Redux development, dynamic form rendering, reusable widgets, validation, localization and configurable UI."
+      }
     },
-    "5": {
+    "2": {
+      "title": "Sherwood Digital",
+      "description": "Frontend work across e-commerce projects and internal platforms. I worked with React, Redux, REST APIs, checkout flows, forms, localization, reusable components and responsive templates.",
+      "highlights": [
+        "Frontend work across e-commerce projects and internal platforms.",
+        "React, Redux and REST API integration.",
+        "Checkout flows, forms, localization, reusable components and responsive templates."
+      ],
+      "techStack": [
+        "React",
+        "Redux",
+        "Redux Thunk",
+        "REST API",
+        "Axios",
+        "react-hook-form",
+        "Yup",
+        "react-intl",
+        "LESS/SCSS",
+        "HTML/CSS",
+        "Reusable React components"
+      ],
+      "caseStudy": {
+        "subtitle": "E-commerce & Internal Platforms",
+        "type": "Agency / client projects",
+        "year": "2021-2022",
+        "role": "Web / frontend developer",
+        "overview": [
+          "Sherwood Digital gave me broad frontend experience across client e-commerce projects, internal platforms and reusable React components.",
+          "The work was varied: production templates, checkout flows, forms, API-connected modules and responsive UI."
+        ],
+        "myRole": "I worked as a web / frontend developer across client-facing e-commerce work and internal tools, using React, Redux, REST APIs, forms, localization and LESS/SCSS.",
+        "workSections": [
+          {
+            "title": "E-commerce UI and Checkout",
+            "paragraphs": [
+              "Worked on responsive e-commerce templates and a checkout flow with cart state, addresses, shipping/payment selection and order summary."
+            ]
+          },
+          {
+            "title": "Forms, State and APIs",
+            "paragraphs": [
+              "Used Redux, Redux Thunk, REST APIs, Axios, react-hook-form and Yup for multi-step flows and data-driven UI."
+            ]
+          },
+          {
+            "title": "Reusable Components",
+            "paragraphs": [
+              "Built shared React components and worked on internal platform modules, localization and responsive production styling."
+            ]
+          }
+        ],
+        "whyItMattered": "The value was variety: real client projects, transactional flows, internal tools and shared components.",
+        "projectShows": "Adaptability across codebases, production UI delivery, forms, state management, REST API integration and reusable React components."
+      }
+    },
+    "3": {
       "title": "Socialbakers Website",
-      "description": "The website of the Socialbakers company with CMS. We were transforming existing Socialbakers website from PHP to Next.js. Not available anymore."
+      "description": "Public-facing company website for Socialbakers, a social media marketing and analytics platform. I worked on website maintenance, new pages and components, responsive UI updates, production bug fixes and rewriting older PHP-based parts of the website to Next.js.",
+      "highlights": [
+        "Public-facing company website for Socialbakers, a social media marketing and analytics platform.",
+        "Website maintenance, new pages and components.",
+        "Responsive UI updates, production bug fixes and rewriting older PHP parts to Next.js."
+      ],
+      "techStack": ["Next.js", "React", "PHP", "WordPress", "HTML", "CSS/SCSS"],
+      "caseStudy": {
+        "subtitle": "Public Company Website",
+        "type": "Company website",
+        "year": "2019-2021",
+        "role": "Web developer",
+        "overview": [
+          "Public company website for Socialbakers, including marketing pages, careers content and a WordPress blog.",
+          "I worked on frontend maintenance, new pages, responsive UI and the gradual move from older PHP-based parts to Next.js."
+        ],
+        "myRole": "I worked as a web developer on new pages and components, production bug fixes, responsive layout updates and PHP-to-Next.js rewrite work.",
+        "workSections": [
+          {
+            "title": "Public Website Delivery",
+            "paragraphs": [
+              "Maintained and improved live public pages, including layout updates, content-related changes and responsive fixes."
+            ]
+          },
+          {
+            "title": "Components and Bug Fixing",
+            "paragraphs": [
+              "Built reusable frontend components and fixed UI issues across a production website used by real visitors."
+            ]
+          },
+          {
+            "title": "Legacy to Next.js",
+            "paragraphs": [
+              "Supported the rewrite of older PHP-based website parts into a more modern Next.js frontend."
+            ]
+          }
+        ],
+        "projectShows": "Public-facing website maintenance, responsive UI, reusable components, production bug fixing and gradual frontend modernization."
+      }
     },
     "4": {
       "title": "Socialbakers Careers",
-      "description": "Careers website for Socialbakers. Standalone website with list of all open positions. Can be filtered by Location or Department, connected to Greenhouse. Not available anymore."
+      "description": "Careers website for Socialbakers. I worked on frontend implementation, responsive UI, job listings, filtering and Greenhouse integration.",
+      "highlights": [
+        "Careers website for Socialbakers.",
+        "Frontend implementation and responsive UI.",
+        "Job listings, filtering and Greenhouse integration."
+      ],
+      "techStack": [
+        "React",
+        "Next.js",
+        "Greenhouse integration",
+        "HTML",
+        "CSS/SCSS"
+      ],
+      "caseStudy": {
+        "subtitle": "Careers Website",
+        "type": "Company website",
+        "year": "2019-2021",
+        "role": "Web developer",
+        "overview": [
+          "Public careers website for Socialbakers with hiring content, job listings, filtering and Greenhouse integration."
+        ],
+        "myRole": "I worked on frontend implementation, responsive layout updates, job listing components, filtering and content updates.",
+        "workSections": [
+          {
+            "title": "Careers UI",
+            "paragraphs": [
+              "Implemented and maintained responsive careers pages aligned with the Socialbakers visual style."
+            ]
+          },
+          {
+            "title": "Jobs and Greenhouse",
+            "paragraphs": [
+              "Worked on job listing views, filtering by location or department and frontend display of Greenhouse job data."
+            ]
+          },
+          {
+            "title": "Production Updates",
+            "paragraphs": [
+              "Supported content changes, UI adjustments and production fixes for a public company website."
+            ]
+          }
+        ],
+        "projectShows": "Responsive public websites, job listing interfaces, filtering, external service integration and production maintenance."
+      }
     },
-    "3": {
+    "5": {
+      "title": "Notes App",
+      "description": "Personal fullstack notes app with authentication, nested pages and block-based editing.",
+      "techStack": ["React", "TypeScript", "Supabase", "Tailwind CSS"],
+      "caseStudy": {
+        "subtitle": "Fullstack Notes Application",
+        "type": "Personal product",
+        "year": "2025",
+        "role": "Frontend / fullstack",
+        "problem": "I wanted to explore a more product-like notes experience with authentication, persistent data, nested pages and flexible content editing.",
+        "myRole": "I designed and built the app end to end, focusing on editor interactions, page structure, authentication and Supabase-backed persistence.",
+        "whatIDid": [
+          "Built authentication and database-backed notes with Supabase",
+          "Implemented block-based editing for different content types",
+          "Added nested pages and page hierarchy",
+          "Created drag-and-drop reordering interactions",
+          "Composed the editor and navigation from reusable React components"
+        ],
+        "outcome": "The project helped me practice product thinking around editor UX, data persistence and fullstack React architecture."
+      }
+    },
+    "6": {
       "title": "Robotfriends",
-      "description": "This application generates a list of users from an API. The features include filtering users, search box, scroll bar, loading time and error boundary message."
+      "description": "Personal React project for API data rendering, search and filtering.",
+      "techStack": ["React", "REST API", "JavaScript", "CSS"],
+      "caseStudy": {
+        "subtitle": "React API Data Project",
+        "type": "Personal / learning",
+        "year": "2019",
+        "role": "Frontend",
+        "problem": "The project was built to practice rendering remote data, filtering lists and handling basic UI states in React.",
+        "myRole": "I implemented the UI, fetched user data from an API and built search and filtering interactions around reusable components.",
+        "whatIDid": [
+          "Rendered API data into reusable card components",
+          "Added search and filtering for the user list",
+          "Handled loading and error states",
+          "Practiced component composition and state updates",
+          "Deployed the project as a small public demo"
+        ],
+        "outcome": "The project strengthened my fundamentals around React components, API data and interactive UI state."
+      }
     },
-    "2": {
+    "7": {
       "title": "Trillo",
-      "description": "Static HTML page with layout done with flexbox - no functionality. In this project I learned not just flexbox but also working with Sass preprocessor, custom CSS properties, media queries, masks and SVG."
+      "description": "Static responsive layout project focused on Flexbox, Sass and SVG styling.",
+      "techStack": ["HTML", "Sass", "Flexbox", "Responsive CSS", "SVG"],
+      "caseStudy": {
+        "subtitle": "Responsive Layout Practice",
+        "type": "Personal / learning",
+        "year": "2018",
+        "role": "Frontend",
+        "problem": "I wanted to practice building a polished static interface with responsive layout techniques and more advanced CSS tooling.",
+        "myRole": "I implemented the page layout and styling from scratch, focusing on Flexbox structure, Sass organization and responsive behavior.",
+        "whatIDid": [
+          "Built a static hotel booking-style layout",
+          "Used Flexbox for the main page structure",
+          "Organized styles with Sass",
+          "Practiced custom CSS properties, masks and SVG assets",
+          "Adjusted the layout across responsive breakpoints"
+        ],
+        "outcome": "The project gave me stronger confidence in responsive CSS, layout composition and visual implementation details."
+      }
     },
-    "1": {
+    "8": {
       "title": "Simple ToDo list",
-      "description": "jQuery based ToDo app that allows user to add, remove and check/uncheck tasks spiced with little CSS animations and effects."
+      "description": "Small jQuery ToDo app with task creation, completion states and simple animations.",
+      "techStack": ["jQuery", "JavaScript", "HTML", "CSS"],
+      "caseStudy": {
+        "subtitle": "Interactive ToDo App",
+        "type": "Personal / learning",
+        "year": "2018",
+        "role": "Frontend",
+        "problem": "The goal was to practice DOM manipulation and basic interactive app behavior before moving deeper into component frameworks.",
+        "myRole": "I built the task interactions, UI states and small CSS effects using jQuery and plain frontend fundamentals.",
+        "whatIDid": [
+          "Added task creation and removal",
+          "Implemented checked and unchecked task states",
+          "Used jQuery for DOM updates and event handling",
+          "Added small CSS animations and hover effects",
+          "Practiced structuring a simple interactive UI"
+        ],
+        "outcome": "The project helped solidify the JavaScript and DOM basics that later made React state management easier to understand."
+      }
     },
-    "0": {
+    "9": {
       "title": "RGB Game",
-      "description": "Nice little app for training RGB skills. Build with HTML, bit of CSS and JavaScript. I practiced DOM manipulation and event handling."
+      "description": "Small color guessing game for practicing JavaScript events and DOM updates.",
+      "techStack": ["JavaScript", "HTML", "CSS", "DOM"],
+      "caseStudy": {
+        "subtitle": "Color Guessing Game",
+        "type": "Personal / learning",
+        "year": "2018",
+        "role": "Frontend",
+        "problem": "The game was a compact way to practice user interaction, random state generation and visual feedback in plain JavaScript.",
+        "myRole": "I implemented the game logic, color generation, difficulty behavior and DOM updates for the UI.",
+        "whatIDid": [
+          "Generated random RGB color options",
+          "Handled user guesses and feedback states",
+          "Added easy and hard game modes",
+          "Updated the interface with plain DOM manipulation",
+          "Practiced event handling and small app logic"
+        ],
+        "outcome": "The project reinforced core JavaScript concepts through a simple, visual and interactive browser game."
+      }
     }
   }
 }

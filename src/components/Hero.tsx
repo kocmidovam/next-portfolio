@@ -7,7 +7,7 @@ import { useTranslations, useLocale } from "next-intl"
 export default function Hero(): React.ReactNode {
   const t = useTranslations("Hero")
   const locale = useLocale()
-  const cvHref = locale === "cs" ? "/CV_Kocmidova_CZ.pdf" : "/CV_Kocmidova_EN.pdf"
+  const cvHref = locale === "cs" ? "/CV-Kočmídová-CZ.pdf" : "/CV-Kocmidova-EN.pdf"
 
   return (
     <section className='relative flex flex-col min-h-[calc(100vh-72px)]'>
@@ -21,7 +21,7 @@ export default function Hero(): React.ReactNode {
             <h1 className='text-foreground font-extrabold tracking-wide mb-1 font-exo2 leading-none text-[clamp(42px,4.5vw,85px)]'>
               Marta
               <br />
-              Kočmídová
+              Kočmídová 
             </h1>
 
             <div className='w-10 h-0.5 bg-brand my-4 lg:my-6' />
