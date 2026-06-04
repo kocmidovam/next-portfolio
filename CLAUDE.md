@@ -10,7 +10,6 @@ Personal portfolio of Marta Kočmídová — a single-page Next.js app with Hero
 - Tailwind CSS (config in `tailwind.config.ts`)
 - next-intl — i18n (translations in `translations/cs.json` and `translations/en.json`)
 - framer-motion — animations
-- Resend — email sending (API route `src/app/api/send/route.js`)
 - react-ga4 — Google Analytics
 - @heroicons/react — icons
 

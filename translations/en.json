@@ -55,8 +55,9 @@
 
   "email": {
     "title": "Let's Connect",
-    "message": "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-    "button": "Send message"
+    "message": "I'm currently looking for new opportunities. Whether you have a role in mind or just want to connect, I'll get back to you as soon as possible.",
+    "button": "Send message",
+    "address": "kocmidova.marta@gmail.com"
   },
   "projects": {
     "title": "My Projects",
@@ -65,6 +66,7 @@
     "personal": "Personal",
     "caseStudyButton": "Read case study",
     "closeCaseStudy": "Close case study",
+    "archivedPreview": "Archived site",
     "caseStudyLabels": {
       "type": "Type",
       "year": "Year",
@@ -434,6 +436,38 @@
           "Practiced event handling and small app logic"
         ],
         "outcome": "The project reinforced core JavaScript concepts through a simple, visual and interactive browser game."
+      }
+    },
+    "10": {
+      "title": "Personal Portfolio",
+      "description": "My personal portfolio website, built with Next.js, React and TypeScript, with full Czech and English localization.",
+      "techStack": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "next-intl",
+        "Framer Motion",
+        "Vercel"
+      ],
+      "caseStudy": {
+        "subtitle": "Bilingual Portfolio Website",
+        "type": "Personal project",
+        "year": "2025-2026",
+        "role": "Design & frontend development",
+        "problem": "I wanted a portfolio that reflects how I actually build products: a clean, responsive interface, a maintainable component structure and proper localization, instead of a static template.",
+        "myRole": "I designed and built the site end to end, from layout and visual style to components, content structure, internationalization and deployment.",
+        "whatIDid": [
+          "Built a single-page site with Hero, About, Projects and Contact sections",
+          "Implemented full Czech and English localization with next-intl",
+          "Created reusable components and centralized the design system in Tailwind",
+          "Added project case studies in an accessible modal",
+          "Added a contact section and integrated Google Analytics",
+          "Configured SEO metadata and Open Graph social previews",
+          "Deployed and hosted the site on Vercel"
+        ],
+        "outcome": "The result is a fast, fully bilingual portfolio that also works as a live demonstration of how I structure and ship a real frontend project.",
+        "whatILearned": "Building my own product end to end sharpened my sense for content structure, i18n ergonomics and keeping a small codebase clean and maintainable."
       }
     }
   }

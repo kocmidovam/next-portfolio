@@ -32,11 +32,6 @@
 - framer-motion for UI animations
 - Simple hover/transition effects directly in Tailwind (`transition-opacity`, `hover:opacity-90`)
 
-## API routes
-
-- In `src/app/api/` as `route.js` or `route.ts`
-- Env variables for sensitive keys (Resend API key in `.env`)
-
 ## TypeScript
 
 - Shared types in `src/types/index.ts`

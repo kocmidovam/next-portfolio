@@ -19,6 +19,7 @@ const ProjectCard = ({
   closeLabel,
   gitUrl,
   previewUrl,
+  previewLabel,
 }: ProjectCardProps): React.ReactNode => {
   const [isCaseStudyOpen, setIsCaseStudyOpen] = useState(false);
 
@@ -32,6 +33,11 @@ const ProjectCard = ({
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
+        {previewLabel && (
+          <span className="absolute left-3 top-3 z-10 rounded-sm border border-brand-dark bg-background/90 px-2 py-1 font-mono text-xs font-bold uppercase tracking-[0.08em] text-brand">
+            {previewLabel}
+          </span>
+        )}
         {gitUrl || previewUrl ? (
           <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-card bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 z-10">
             {gitUrl && (
@@ -47,6 +53,8 @@ const ProjectCard = ({
               <Link
                 href={previewUrl}
                 target="_blank"
+                aria-label={previewLabel ?? title}
+                title={previewLabel ?? title}
                 className="h-14 w-14 border-2 relative rounded-full border-subtle hover:border-white group/link"
               >
                 <EyeIcon className="h-10 w-10 text-subtle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />

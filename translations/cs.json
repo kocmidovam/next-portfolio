@@ -54,8 +54,9 @@
   },
   "email": {
     "title": "Spojme se",
-    "message": "Momentálně hledám nové příležitosti a moje schránka je vždy otevřená. Ať už máte dotaz, nebo se jen chcete pozdravit, ozvám se co nejdříve!",
-    "button": "Poslat zprávu"
+    "message": "Momentálně hledám nové příležitosti. Ať už máte konkrétní nabídku, nebo se chcete jen spojit, ozvu se co nejdříve.",
+    "button": "Poslat zprávu",
+    "address": "kocmidova.marta@gmail.com"
   },
   "projects": {
     "title": "Moje projekty",
@@ -64,6 +65,7 @@
     "personal": "Osobní",
     "caseStudyButton": "Otevřít case study",
     "closeCaseStudy": "Zavřít case study",
+    "archivedPreview": "Archivní web",
     "caseStudyLabels": {
       "type": "Typ",
       "year": "Rok",
@@ -433,6 +435,38 @@
           "Procvičila jsem event handling a logiku malé aplikace"
         ],
         "outcome": "Projekt upevnil základní JavaScript koncepty skrze jednoduchou, vizuální a interaktivní browser hru."
+      }
+    },
+    "10": {
+      "title": "Osobní portfolio",
+      "description": "Moje osobní portfolio postavené na Next.js, Reactu a TypeScriptu s kompletní českou a anglickou lokalizací.",
+      "techStack": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "next-intl",
+        "Framer Motion",
+        "Vercel"
+      ],
+      "caseStudy": {
+        "subtitle": "Dvojjazyčné portfolio",
+        "type": "Osobní projekt",
+        "year": "2025-2026",
+        "role": "Design & frontend vývoj",
+        "problem": "Chtěla jsem portfolio, které ukazuje, jak reálně stavím produkty: čisté responzivní rozhraní, udržovatelnou strukturu komponent a pořádnou lokalizaci, místo statické šablony.",
+        "myRole": "Navrhla a postavila jsem celý web od začátku do konce – od layoutu a vizuálního stylu přes komponenty a strukturu obsahu až po internacionalizaci a nasazení.",
+        "whatIDid": [
+          "Postavila jsem single-page web se sekcemi Hero, O mně, Projekty a Kontakt",
+          "Implementovala jsem kompletní českou a anglickou lokalizaci přes next-intl",
+          "Vytvořila jsem znovupoužitelné komponenty a centralizovala design systém v Tailwindu",
+          "Přidala jsem case studies projektů v přístupném modalu",
+          "Přidala jsem kontaktní sekci a napojila Google Analytics",
+          "Nastavila jsem SEO metadata a Open Graph náhledy pro sdílení",
+          "Nasadila a hostovala web na Vercelu"
+        ],
+        "outcome": "Výsledkem je rychlé, plně dvojjazyčné portfolio, které zároveň slouží jako živá ukázka toho, jak strukturuji a dodávám reálný frontend projekt.",
+        "whatILearned": "Postavit vlastní produkt od začátku do konce mi zostřilo cit pro strukturu obsahu, ergonomii i18n a udržení malého kódu čistého a udržovatelného."
       }
     }
   },

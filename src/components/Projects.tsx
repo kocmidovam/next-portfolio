@@ -53,7 +53,9 @@ const projectsData: Project[] = [
     image: "/images/projects/socialbakers-website-cover.png",
     tag: ["All", "Work"],
     gitUrl: "",
-    previewUrl: "",
+    previewUrl:
+      "https://web.archive.org/web/20200101104911/https://www.socialbakers.com/",
+    previewLabelKey: "projects.archivedPreview",
   },
   {
     id: 4,
@@ -65,29 +67,20 @@ const projectsData: Project[] = [
     image: "/images/projects/socialbakers-careers-cover.png",
     tag: ["All", "Work"],
     gitUrl: "",
-    previewUrl: "",
+    previewUrl:
+      "https://web.archive.org/web/20191017133616/https://www.socialbakers.com/careers",
+    previewLabelKey: "projects.archivedPreview",
   },
   {
-    id: 5,
-    titleKey: "projects.5.title",
-    descriptionKey: "projects.5.description",
-    techStackKey: "projects.5.techStack",
-    caseStudyKey: "projects.5.caseStudy",
-    image: "/images/projects/notes-app.png",
+    id: 10,
+    titleKey: "projects.10.title",
+    descriptionKey: "projects.10.description",
+    techStackKey: "projects.10.techStack",
+    caseStudyKey: "projects.10.caseStudy",
+    image: "/images/projects/portfolio-cover.png",
     tag: ["All", "Personal"],
-    gitUrl: "https://github.com/kocmidovam/notes-app",
-    previewUrl: "https://mellifluous-sawine-27161a.netlify.app/",
-  },
-  {
-    id: 6,
-    titleKey: "projects.6.title",
-    descriptionKey: "projects.6.description",
-    techStackKey: "projects.6.techStack",
-    caseStudyKey: "projects.6.caseStudy",
-    image: "/images/projects/robotfriends.png",
-    tag: ["All", "Personal"],
-    gitUrl: "https://github.com/kocmidovam/Robofriends",
-    previewUrl: "https://kocmidovam.github.io/Robofriends/",
+    gitUrl: "https://github.com/kocmidovam/next-portfolio",
+    previewUrl: "https://martakocmidova.cz",
   },
   {
     id: 7,
@@ -101,17 +94,6 @@ const projectsData: Project[] = [
     previewUrl: "https://kocmidovam.github.io/Trillo/",
   },
   {
-    id: 8,
-    titleKey: "projects.8.title",
-    descriptionKey: "projects.8.description",
-    techStackKey: "projects.8.techStack",
-    caseStudyKey: "projects.8.caseStudy",
-    image: "/images/projects/todo.png",
-    tag: ["All", "Personal"],
-    gitUrl: "https://github.com/kocmidovam/Todo-list",
-    previewUrl: "https://kocmidovam.github.io/Todo-list/",
-  },
-  {
     id: 9,
     titleKey: "projects.9.title",
     descriptionKey: "projects.9.description",
@@ -122,6 +104,17 @@ const projectsData: Project[] = [
     gitUrl: "https://github.com/kocmidovam/RGBgame",
     previewUrl: "https://kocmidovam.github.io/RGBgame/",
   },
+  // {
+  //   id: 5,
+  //   titleKey: "projects.5.title",
+  //   descriptionKey: "projects.5.description",
+  //   techStackKey: "projects.5.techStack",
+  //   caseStudyKey: "projects.5.caseStudy",
+  //   image: "/images/projects/notes-app.png",
+  //   tag: ["All", "Personal"],
+  //   gitUrl: "https://github.com/kocmidovam/notes-app",
+  //   previewUrl: "https://mellifluous-sawine-27161a.netlify.app/",
+  // },
 ];
 
 const ProjectsSection = (): React.ReactNode => {
@@ -195,6 +188,9 @@ const ProjectsSection = (): React.ReactNode => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              previewLabel={
+                project.previewLabelKey ? t(project.previewLabelKey) : undefined
+              }
             />
           </motion.li>
         ))}

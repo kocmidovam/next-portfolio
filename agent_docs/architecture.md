@@ -7,19 +7,19 @@ src/
   app/
     layout.tsx          # Root layout: fonts, NextIntlClientProvider, GoogleAnalytics
     page.tsx            # Single page — composes all sections
-    api/send/route.js   # API route for sending emails via Resend
   components/
     Navbar.tsx          # Navigation with LanguageSwitcher
     Navlink.tsx         # Single navigation link
     LanguageSwitcher.tsx # CS/EN switcher (stores locale in cookie)
     Hero.tsx            # Intro section with photo, CTA buttons and CV download
     About.tsx           # About me — translated paragraphs and skills tag block
+    SkillIcon.tsx       # Non-interactive skill icon selection using Heroicons
     TabButton.tsx       # Legacy tab button component, currently unused
     Projects.tsx        # Project grid with tag-based filtering
     ProjectCard.tsx     # Single project card and case study trigger
     CaseStudyModal.tsx  # Case study dialog content and modal behavior
     ProjectTag.tsx      # Tag for filtering projects
-    Email.tsx           # Contact form (calls /api/send)
+    Email.tsx           # Contact section with mailto link and social links
     Footer.tsx          # Footer with social links
     HexBackground.tsx   # Decorative background — static SVG data URI, no JS runtime
     Analytics.tsx       # Google Analytics 4 initialization
@@ -46,7 +46,7 @@ public/
 - **i18n**: Locale is read from the `locale` cookie. The server (`layout.tsx`) loads the correct translations and passes them to `NextIntlClientProvider`. Client components call `useTranslations()`.
 - **Language switching**: `LanguageSwitcher` writes the cookie and refreshes the page — no client-side routing.
 - **Projects content**: `Projects.tsx` reads project metadata from local config and translated content from `translations/*.json`. `ProjectCard.tsx` renders short highlights on cards and longer case studies inside a modal.
-- **Contact form**: `Email.tsx` (client) → `POST /api/send` → Resend API → email to kocmidova.marta@gmail.com
+- **Contact**: `Email.tsx` renders a `mailto:kocmidova.marta@gmail.com` link plus GitHub/LinkedIn social links — no form submission or backend.
 - **Analytics**: `Analytics.tsx` initializes GA4 in `<head>`, `gtagHelper.tsx` exports helper functions for events.
 - **SEO/social metadata**: `layout.tsx` defines metadata, OpenGraph and Twitter cards. Social preview image is `/og-image.png` from `public/`.
 

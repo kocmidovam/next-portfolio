@@ -12,6 +12,7 @@ export type ProjectCardProps = {
   closeLabel: string;
   gitUrl: string;
   previewUrl: string;
+  previewLabel?: string;
 };
 
 export type ProjectCaseStudy = {
@@ -89,6 +90,7 @@ export type Project = {
   tag: string[];
   gitUrl: string;
   previewUrl: string;
+  previewLabelKey?: string;
 };
 
 // Analytics Types

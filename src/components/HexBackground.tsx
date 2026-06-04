@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import React from "react"
+import React from "react";
 
 // Tile dimensions for the offset hex grid (R=18, pointy-top)
 // width = R * sqrt(3) ≈ 31.18,  height = R * 3 = 54
-const HEX_W = 31.18
-const HEX_H = 54
+const HEX_W = 31.18;
+const HEX_H = 54;
 
 // 5 hexagon centers that produce a seamless tile when repeated:
 // (0,0), (31.18,0), (15.59,27), (0,54), (31.18,54)
@@ -19,15 +19,15 @@ const TILE = [
   `M 0,36 L 15.59,45 15.59,63 0,72 -15.59,63 -15.59,45 Z `,
   `M 31.18,36 L 46.77,45 46.77,63 31.18,72 15.59,63 15.59,45 Z`,
   `'/></svg>`,
-].join("")
+].join("");
 
-const DATA_URI = `url("data:image/svg+xml,${TILE}")`
+const DATA_URI = `url("data:image/svg+xml,${TILE}")`;
 const CSS_MASK =
-  "linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.4) 90%, rgba(255,255,255,0.6) 100%)"
+  "linear-gradient(90deg, rgba(255,255,255,0.42) 0%, rgba(255,255,255,0.08) 24%, rgba(255,255,255,0.015) 50%, rgba(255,255,255,0.08) 76%, rgba(255,255,255,0.42) 100%)";
 
 const HexBackground = (): React.ReactNode => {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none bg-[#0b0d19]">
+    <div className="fixed inset-0 z-0 pointer-events-none bg-background">
       <div
         className="absolute inset-0"
         style={{
@@ -39,7 +39,7 @@ const HexBackground = (): React.ReactNode => {
         }}
       />
     </div>
-  )
-}
+  );
+};
 
-export default HexBackground
+export default HexBackground;
